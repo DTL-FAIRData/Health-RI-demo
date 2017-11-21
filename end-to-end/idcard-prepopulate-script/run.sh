@@ -1,7 +1,7 @@
 cd script/src
-biobankfdpURL="http://localhost:8079/fdp"
-registryfdpURL="http://localhost:8081/fdp"
-simpleServerURL="http://localhost:8083/"
+biobankfdpURL="http://localhost:8500/fdp"
+registryfdpURL="http://localhost:8501/fdp"
+simpleServerURL="http://localhost:8503/"
 
 echo "============== POSTING Idcard's biobank metadata =============="
 python3 idcard.py biobank $biobankfdpURL $simpleServerURL  
