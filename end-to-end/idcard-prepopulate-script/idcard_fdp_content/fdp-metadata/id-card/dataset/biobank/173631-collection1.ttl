@@ -1,0 +1,51 @@
+@prefix ns1: <http://www.w3.org/ns/dcat#> .
+@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix ns3: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/dataset/173631-collection1> a ns1:Dataset ;
+    rdfs:label "BIOGEN - Genetic Biobank"@en ;
+    ns2:hasVersion "1.0" ;
+    ns2:isPartOf <BASE_URI/fdp/catalog/biobank> ;
+    ns2:issued "Fri Mar 04 09:40:33 GMT 2016"^^xsd:date ;
+    ns2:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns2:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns2:modified "Fri Jun 17 09:39:54 GMT 2016"^^xsd:date ;
+    ns2:publisher <BASE_URI/organization/173631> ;
+    ns2:title "BIOGEN - Genetic Biobank"@en ;
+    ns3:metadataIdentifier <BASE_URI/fdp/biobank/173631-collection1/metadataID> ;
+    ns3:metadataIssued "2017-03-16"^^xsd:date ;
+    ns3:metadataModified "2017-03-16"^^xsd:date ;
+    ns1:keyword "BIOGEN - Genetic Biobank",
+        "biobank" ;
+    ns1:landingPage <http://catalogue.rd-connect.eu/web/173631/bb_home> ;
+    ns1:theme <http://dbpedia.org/resource/Biobank>,
+        <http://edamontology.org/topic_3337>,
+        <http://www.orpha.net/ORDO/Orphanet_163634>,
+        <http://www.orpha.net/ORDO/Orphanet_174>,
+        <http://www.orpha.net/ORDO/Orphanet_2485>,
+        <http://www.orpha.net/ORDO/Orphanet_2499>,
+        <http://www.orpha.net/ORDO/Orphanet_280110,2801>,
+        <http://www.orpha.net/ORDO/Orphanet_296>,
+        <http://www.orpha.net/ORDO/Orphanet_321>,
+        <http://www.orpha.net/ORDO/Orphanet_35688>,
+        <http://www.orpha.net/ORDO/Orphanet_524>,
+        <http://www.orpha.net/ORDO/Orphanet_560>,
+        <http://www.orpha.net/ORDO/Orphanet_636>,
+        <http://www.orpha.net/ORDO/Orphanet_666>,
+        <http://www.orpha.net/ORDO/Orphanet_739>,
+        <http://www.orpha.net/ORDO/Orphanet_750>,
+        <http://www.orpha.net/ORDO/Orphanet_828>,
+        <http://www.orpha.net/ORDO/Orphanet_90309,90318,285,286,99875,99876>,
+        <http://www.orpha.net/ORDO/Orphanet_93308,93307,93311> .
+
+<BASE_URI/fdp/biobank/173631-collection1/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns2:identifier "173631-collection1" .
+
+<BASE_URI/organization/173631> a ns4:Organization ;
+    ns4:name "BIOGEN - Genetic Biobank"@en .
+

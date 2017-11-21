@@ -1,0 +1,36 @@
+@prefix ns1: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns2: <http://www.w3.org/ns/dcat#> .
+@prefix ns3: <http://purl.org/dc/terms/> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/dataset/11789-collection1> a ns2:Dataset ;
+    rdfs:label "REaDY-Registry of muscular DYstrophy"@en ;
+    ns3:hasVersion "1.0" ;
+    ns3:isPartOf <BASE_URI/fdp/catalog/registry> ;
+    ns3:issued "Wed Jan 07 18:59:01 GMT 2015"^^xsd:date ;
+    ns3:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns3:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns3:modified "Wed Feb 15 12:58:46 GMT 2017"^^xsd:date ;
+    ns3:publisher <BASE_URI/organization/11789> ;
+    ns3:title "REaDY-Registry of muscular DYstrophy"@en ;
+    ns1:metadataIdentifier <BASE_URI/fdp/registry/11789-collection1/metadataID> ;
+    ns1:metadataIssued "2017-03-16"^^xsd:date ;
+    ns1:metadataModified "2017-03-16"^^xsd:date ;
+    ns2:keyword "REaDY-Registry of muscular DYstrophy",
+        "registry" ;
+    ns2:landingPage <http://catalogue.rd-connect.eu/web/ready-registry-of-muscolar-dystrophy/reg_home> ;
+    ns2:theme <http://dbpedia.org/resource/Disease_registry>,
+        <http://www.orpha.net/ORDO/Orphanet_206647>,
+        <http://www.orpha.net/ORDO/Orphanet_262>,
+        <http://www.orpha.net/ORDO/Orphanet_269> .
+
+<BASE_URI/fdp/registry/11789-collection1/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns3:identifier "11789-collection1" .
+
+<BASE_URI/organization/11789> a ns4:Organization ;
+    ns4:name "REaDY-Registry of muscular DYstrophy"@en .
+

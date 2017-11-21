@@ -1,0 +1,108 @@
+@prefix ns1: <http://www.w3.org/ns/dcat#> .
+@prefix ns2: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns3: <http://purl.org/dc/terms/> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/dataset/77630-collection1> a ns1:Dataset ;
+    rdfs:label "Cells lines and DNA bank of Rett syndrome and other X-linked mental retardation"@en ;
+    ns3:hasVersion "1.0" ;
+    ns3:isPartOf <BASE_URI/fdp/catalog/biobank> ;
+    ns3:issued "Wed Apr 01 10:22:37 GMT 2015"^^xsd:date ;
+    ns3:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns3:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns3:modified "Fri May 06 08:18:00 GMT 2016"^^xsd:date ;
+    ns3:publisher <BASE_URI/organization/77630> ;
+    ns3:title "Cells lines and DNA bank of Rett syndrome and other X-linked mental retardation"@en ;
+    ns2:metadataIdentifier <BASE_URI/fdp/biobank/77630-collection1/metadataID> ;
+    ns2:metadataIssued "2017-03-16"^^xsd:date ;
+    ns2:metadataModified "2017-03-16"^^xsd:date ;
+    ns1:keyword "Cells lines and DNA bank of Rett syndrome and other X-linked mental retardation",
+        "biobank" ;
+    ns1:landingPage <http://catalogue.rd-connect.eu/web/cells-lines-and-dna-bank-of-rett-syndrome-and-other-x-linked-mental-retardation/bb_home> ;
+    ns1:theme <http://dbpedia.org/resource/Biobank>,
+        <http://edamontology.org/topic_3337>,
+        <http://www.orpha.net/ORDO/Orphanet_101016>,
+        <http://www.orpha.net/ORDO/Orphanet_106>,
+        <http://www.orpha.net/ORDO/Orphanet_112>,
+        <http://www.orpha.net/ORDO/Orphanet_130>,
+        <http://www.orpha.net/ORDO/Orphanet_139498>,
+        <http://www.orpha.net/ORDO/Orphanet_1465>,
+        <http://www.orpha.net/ORDO/Orphanet_155>,
+        <http://www.orpha.net/ORDO/Orphanet_193>,
+        <http://www.orpha.net/ORDO/Orphanet_201>,
+        <http://www.orpha.net/ORDO/Orphanet_2152>,
+        <http://www.orpha.net/ORDO/Orphanet_216796>,
+        <http://www.orpha.net/ORDO/Orphanet_221150>,
+        <http://www.orpha.net/ORDO/Orphanet_227535>,
+        <http://www.orpha.net/ORDO/Orphanet_2322>,
+        <http://www.orpha.net/ORDO/Orphanet_2483>,
+        <http://www.orpha.net/ORDO/Orphanet_2554>,
+        <http://www.orpha.net/ORDO/Orphanet_2578>,
+        <http://www.orpha.net/ORDO/Orphanet_261494>,
+        <http://www.orpha.net/ORDO/Orphanet_269>,
+        <http://www.orpha.net/ORDO/Orphanet_270>,
+        <http://www.orpha.net/ORDO/Orphanet_273>,
+        <http://www.orpha.net/ORDO/Orphanet_2909>,
+        <http://www.orpha.net/ORDO/Orphanet_2911>,
+        <http://www.orpha.net/ORDO/Orphanet_3051>,
+        <http://www.orpha.net/ORDO/Orphanet_3440>,
+        <http://www.orpha.net/ORDO/Orphanet_3453>,
+        <http://www.orpha.net/ORDO/Orphanet_357>,
+        <http://www.orpha.net/ORDO/Orphanet_358>,
+        <http://www.orpha.net/ORDO/Orphanet_359>,
+        <http://www.orpha.net/ORDO/Orphanet_374>,
+        <http://www.orpha.net/ORDO/Orphanet_399>,
+        <http://www.orpha.net/ORDO/Orphanet_42775>,
+        <http://www.orpha.net/ORDO/Orphanet_461>,
+        <http://www.orpha.net/ORDO/Orphanet_478>,
+        <http://www.orpha.net/ORDO/Orphanet_484>,
+        <http://www.orpha.net/ORDO/Orphanet_510>,
+        <http://www.orpha.net/ORDO/Orphanet_54>,
+        <http://www.orpha.net/ORDO/Orphanet_558>,
+        <http://www.orpha.net/ORDO/Orphanet_562>,
+        <http://www.orpha.net/ORDO/Orphanet_570>,
+        <http://www.orpha.net/ORDO/Orphanet_586>,
+        <http://www.orpha.net/ORDO/Orphanet_636,637>,
+        <http://www.orpha.net/ORDO/Orphanet_640>,
+        <http://www.orpha.net/ORDO/Orphanet_652>,
+        <http://www.orpha.net/ORDO/Orphanet_705>,
+        <http://www.orpha.net/ORDO/Orphanet_72>,
+        <http://www.orpha.net/ORDO/Orphanet_730>,
+        <http://www.orpha.net/ORDO/Orphanet_731>,
+        <http://www.orpha.net/ORDO/Orphanet_733>,
+        <http://www.orpha.net/ORDO/Orphanet_739>,
+        <http://www.orpha.net/ORDO/Orphanet_758>,
+        <http://www.orpha.net/ORDO/Orphanet_77>,
+        <http://www.orpha.net/ORDO/Orphanet_778>,
+        <http://www.orpha.net/ORDO/Orphanet_790>,
+        <http://www.orpha.net/ORDO/Orphanet_791>,
+        <http://www.orpha.net/ORDO/Orphanet_792>,
+        <http://www.orpha.net/ORDO/Orphanet_79431>,
+        <http://www.orpha.net/ORDO/Orphanet_805>,
+        <http://www.orpha.net/ORDO/Orphanet_819>,
+        <http://www.orpha.net/ORDO/Orphanet_821>,
+        <http://www.orpha.net/ORDO/Orphanet_83330;83418>,
+        <http://www.orpha.net/ORDO/Orphanet_84>,
+        <http://www.orpha.net/ORDO/Orphanet_845>,
+        <http://www.orpha.net/ORDO/Orphanet_870>,
+        <http://www.orpha.net/ORDO/Orphanet_887>,
+        <http://www.orpha.net/ORDO/Orphanet_892>,
+        <http://www.orpha.net/ORDO/Orphanet_904>,
+        <http://www.orpha.net/ORDO/Orphanet_905>,
+        <http://www.orpha.net/ORDO/Orphanet_908>,
+        <http://www.orpha.net/ORDO/Orphanet_915>,
+        <http://www.orpha.net/ORDO/Orphanet_93114>,
+        <http://www.orpha.net/ORDO/Orphanet_93929>,
+        <http://www.orpha.net/ORDO/Orphanet_95>,
+        <http://www.orpha.net/ORDO/Orphanet_XL:88917;AD:88918;AR:88919> .
+
+<BASE_URI/fdp/biobank/77630-collection1/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns3:identifier "77630-collection1" .
+
+<BASE_URI/organization/77630> a ns4:Organization ;
+    ns4:name "Cells lines and DNA bank of Rett syndrome and other X-linked mental retardation"@en .
+

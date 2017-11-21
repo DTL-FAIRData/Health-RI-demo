@@ -1,0 +1,42 @@
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://www.w3.org/ns/dcat#> .
+@prefix ns3: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns4: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/dataset/104597-collection1> a ns2:Dataset ;
+    rdfs:label "RaDiCo-RETICO - French national Cohort on hereditary retinal dystrophies"@en ;
+    ns4:hasVersion "1.0" ;
+    ns4:isPartOf <BASE_URI/fdp/catalog/registry> ;
+    ns4:issued "Wed Oct 07 12:19:54 GMT 2015"^^xsd:date ;
+    ns4:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns4:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns4:modified "Tue Apr 12 15:43:21 GMT 2016"^^xsd:date ;
+    ns4:publisher <BASE_URI/organization/104597> ;
+    ns4:title "RaDiCo-RETICO - French national Cohort on hereditary retinal dystrophies"@en ;
+    ns3:metadataIdentifier <BASE_URI/fdp/registry/104597-collection1/metadataID> ;
+    ns3:metadataIssued "2017-03-16"^^xsd:date ;
+    ns3:metadataModified "2017-03-16"^^xsd:date ;
+    ns2:keyword "RaDiCo-RETICO - French national Cohort on hereditary retinal dystrophies",
+        "registry" ;
+    ns2:landingPage <http://catalogue.rd-connect.eu/web/radico-retico/reg_home> ;
+    ns2:theme <http://dbpedia.org/resource/Disease_registry>,
+        <http://www.orpha.net/ORDO/Orphanet_110>,
+        <http://www.orpha.net/ORDO/Orphanet_180>,
+        <http://www.orpha.net/ORDO/Orphanet_231169>,
+        <http://www.orpha.net/ORDO/Orphanet_52427>,
+        <http://www.orpha.net/ORDO/Orphanet_64>,
+        <http://www.orpha.net/ORDO/Orphanet_65>,
+        <http://www.orpha.net/ORDO/Orphanet_791>,
+        <http://www.orpha.net/ORDO/Orphanet_827>,
+        <http://www.orpha.net/ORDO/Orphanet_85332> .
+
+<BASE_URI/fdp/registry/104597-collection1/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns4:identifier "104597-collection1" .
+
+<BASE_URI/organization/104597> a ns1:Organization ;
+    ns1:name "RaDiCo-RETICO - French national Cohort on hereditary retinal dystrophies"@en .
+

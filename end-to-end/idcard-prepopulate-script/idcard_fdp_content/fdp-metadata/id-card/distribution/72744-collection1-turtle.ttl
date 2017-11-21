@@ -1,0 +1,31 @@
+@prefix ns1: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns2: <http://www.w3.org/ns/dcat#> .
+@prefix ns3: <http://purl.org/dc/terms/> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/distibution/72744-collection1-ttl> a ns2:Distribution ;
+    rdfs:label "Tuscany registry of congenital defects turtle distribution"@en ;
+    ns3:hasVersion "1.0" ;
+    ns3:isPartOf <BASE_URI/fdp/dataset/72744-collection1> ;
+    ns3:issued "Fri Mar 27 09:27:31 GMT 2015"^^xsd:date ;
+    ns3:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns3:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns3:modified "Tue May 03 15:01:58 GMT 2016"^^xsd:date ;
+    ns3:publisher <BASE_URI/organization/72744> ;
+    ns3:title "Tuscany registry of congenital defects turtle distribution"@en ;
+    ns1:metadataIdentifier <BASE_URI/fdp/distibution/72744-collection1_ttl/metadataID> ;
+    ns1:metadataIssued "2017-03-16"^^xsd:date ;
+    ns1:metadataModified "2017-03-16"^^xsd:date ;
+    ns2:downloadURL <SIMPLE_SERVER/rdc-demo-dataset/Angelman-syndrome-person.ttl> ;
+	ns2:mediaType "text/turtle" .
+
+<BASE_URI/fdp/distibution/72744-collection1_ttl/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns3:identifier "72744-collection1-ttl" .
+
+<BASE_URI/organization/72744> a ns4:Organization ;
+    ns4:name "Tuscany registry of congenital defects"@en .
+

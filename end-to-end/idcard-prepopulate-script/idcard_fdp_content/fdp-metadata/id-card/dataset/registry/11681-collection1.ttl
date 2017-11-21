@@ -1,0 +1,33 @@
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://www.w3.org/ns/dcat#> .
+@prefix ns4: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/dataset/11681-collection1> a ns3:Dataset ;
+    rdfs:label "PRISMS, (Parents and Researchers Interested in Smith-Magenis Sydrome)"@en ;
+    ns1:hasVersion "1.0" ;
+    ns1:isPartOf <BASE_URI/fdp/catalog/registry> ;
+    ns1:issued "Wed Jan 07 18:28:34 GMT 2015"^^xsd:date ;
+    ns1:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns1:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns1:modified "Sat Feb 07 06:21:17 GMT 2015"^^xsd:date ;
+    ns1:publisher <BASE_URI/organization/11681> ;
+    ns1:title "PRISMS, (Parents and Researchers Interested in Smith-Magenis Sydrome)"@en ;
+    ns4:metadataIdentifier <BASE_URI/fdp/registry/11681-collection1/metadataID> ;
+    ns4:metadataIssued "2017-03-16"^^xsd:date ;
+    ns4:metadataModified "2017-03-16"^^xsd:date ;
+    ns3:keyword "PRISMS, (Parents and Researchers Interested in Smith-Magenis Sydrome)",
+        "registry" ;
+    ns3:landingPage <http://catalogue.rd-connect.eu/web/prisms-parents-and-researchers-interested-in-smith-magenis-snydrome-/reg_home> ;
+    ns3:theme <http://dbpedia.org/resource/Disease_registry> .
+
+<BASE_URI/fdp/registry/11681-collection1/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns1:identifier "11681-collection1" .
+
+<BASE_URI/organization/11681> a ns2:Organization ;
+    ns2:name "PRISMS, (Parents and Researchers Interested in Smith-Magenis Sydrome)"@en .
+

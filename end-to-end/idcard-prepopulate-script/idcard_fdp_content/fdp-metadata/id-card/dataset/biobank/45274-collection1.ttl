@@ -1,0 +1,96 @@
+@prefix ns1: <http://www.w3.org/ns/dcat#> .
+@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix ns3: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/dataset/45274-collection1> a ns1:Dataset ;
+    rdfs:label "Cell line and DNA Bank of Genetic Movement Dis and Mitochondrial Dis - Besta Institute Milano, Italy"@en ;
+    ns2:hasVersion "1.0" ;
+    ns2:isPartOf <BASE_URI/fdp/catalog/biobank> ;
+    ns2:issued "Thu Feb 05 11:33:32 GMT 2015"^^xsd:date ;
+    ns2:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns2:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns2:modified "Fri May 13 10:57:46 GMT 2016"^^xsd:date ;
+    ns2:publisher <BASE_URI/organization/45274> ;
+    ns2:title "Cell line and DNA Bank of Genetic Movement Dis and Mitochondrial Dis - Besta Institute Milano, Italy"@en ;
+    ns3:metadataIdentifier <BASE_URI/fdp/biobank/45274-collection1/metadataID> ;
+    ns3:metadataIssued "2017-03-16"^^xsd:date ;
+    ns3:metadataModified "2017-03-16"^^xsd:date ;
+    ns1:keyword "Cell line and DNA Bank of Genetic Movement Dis and Mitochondrial Dis - Besta Institute Milano, Italy",
+        "biobank" ;
+    ns1:landingPage <http://catalogue.rd-connect.eu/web/bank-for-the-diagnosis-and-research-of-movement-disorders-mdb-fondazione-i.r.c.c.s-istituto-neuro/bb_home> ;
+    ns1:theme <http://dbpedia.org/resource/Biobank>,
+        <http://edamontology.org/topic_3337>,
+        <http://www.orpha.net/ORDO/Orphanet_101150>,
+        <http://www.orpha.net/ORDO/Orphanet_104>,
+        <http://www.orpha.net/ORDO/Orphanet_119021>,
+        <http://www.orpha.net/ORDO/Orphanet_12333499901>,
+        <http://www.orpha.net/ORDO/Orphanet_123524>,
+        <http://www.orpha.net/ORDO/Orphanet_123537>,
+        <http://www.orpha.net/ORDO/Orphanet_123547>,
+        <http://www.orpha.net/ORDO/Orphanet_123552>,
+        <http://www.orpha.net/ORDO/Orphanet_123562>,
+        <http://www.orpha.net/ORDO/Orphanet_123567>,
+        <http://www.orpha.net/ORDO/Orphanet_13>,
+        <http://www.orpha.net/ORDO/Orphanet_137898>,
+        <http://www.orpha.net/ORDO/Orphanet_1429>,
+        <http://www.orpha.net/ORDO/Orphanet_1460>,
+        <http://www.orpha.net/ORDO/Orphanet_1561>,
+        <http://www.orpha.net/ORDO/Orphanet_1980>,
+        <http://www.orpha.net/ORDO/Orphanet_201507>,
+        <http://www.orpha.net/ORDO/Orphanet_210571>,
+        <http://www.orpha.net/ORDO/Orphanet_238329>,
+        <http://www.orpha.net/ORDO/Orphanet_244375>,
+        <http://www.orpha.net/ORDO/Orphanet_244376>,
+        <http://www.orpha.net/ORDO/Orphanet_254886>,
+        <http://www.orpha.net/ORDO/Orphanet_254892>,
+        <http://www.orpha.net/ORDO/Orphanet_254905>,
+        <http://www.orpha.net/ORDO/Orphanet_254913>,
+        <http://www.orpha.net/ORDO/Orphanet_255>,
+        <http://www.orpha.net/ORDO/Orphanet_255182>,
+        <http://www.orpha.net/ORDO/Orphanet_256>,
+        <http://www.orpha.net/ORDO/Orphanet_2598>,
+        <http://www.orpha.net/ORDO/Orphanet_260358>,
+        <http://www.orpha.net/ORDO/Orphanet_2609>,
+        <http://www.orpha.net/ORDO/Orphanet_280282>,
+        <http://www.orpha.net/ORDO/Orphanet_2828>,
+        <http://www.orpha.net/ORDO/Orphanet_289560>,
+        <http://www.orpha.net/ORDO/Orphanet_3208>,
+        <http://www.orpha.net/ORDO/Orphanet_3212>,
+        <http://www.orpha.net/ORDO/Orphanet_329284>,
+        <http://www.orpha.net/ORDO/Orphanet_329466>,
+        <http://www.orpha.net/ORDO/Orphanet_35069>,
+        <http://www.orpha.net/ORDO/Orphanet_35698>,
+        <http://www.orpha.net/ORDO/Orphanet_36899>,
+        <http://www.orpha.net/ORDO/Orphanet_385>,
+        <http://www.orpha.net/ORDO/Orphanet_397725>,
+        <http://www.orpha.net/ORDO/Orphanet_420485>,
+        <http://www.orpha.net/ORDO/Orphanet_480>,
+        <http://www.orpha.net/ORDO/Orphanet_506>,
+        <http://www.orpha.net/ORDO/Orphanet_51188>,
+        <http://www.orpha.net/ORDO/Orphanet_550>,
+        <http://www.orpha.net/ORDO/Orphanet_551>,
+        <http://www.orpha.net/ORDO/Orphanet_644>,
+        <http://www.orpha.net/ORDO/Orphanet_699>,
+        <http://www.orpha.net/ORDO/Orphanet_70594>,
+        <http://www.orpha.net/ORDO/Orphanet_70595>,
+        <http://www.orpha.net/ORDO/Orphanet_71517>,
+        <http://www.orpha.net/ORDO/Orphanet_726>,
+        <http://www.orpha.net/ORDO/Orphanet_765>,
+        <http://www.orpha.net/ORDO/Orphanet_79243>,
+        <http://www.orpha.net/ORDO/Orphanet_98673>,
+        <http://www.orpha.net/ORDO/Orphanet_98806>,
+        <http://www.orpha.net/ORDO/Orphanet_98809>,
+        <http://www.orpha.net/ORDO/Orphanet_98810>,
+        <http://www.orpha.net/ORDO/Orphanet_99731> .
+
+<BASE_URI/fdp/biobank/45274-collection1/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns2:identifier "45274-collection1" .
+
+<BASE_URI/organization/45274> a ns4:Organization ;
+    ns4:name "Cell line and DNA Bank of Genetic Movement Dis and Mitochondrial Dis - Besta Institute Milano, Italy"@en .
+

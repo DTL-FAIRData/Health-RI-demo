@@ -1,0 +1,72 @@
+@prefix ns1: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns2: <http://www.w3.org/ns/dcat#> .
+@prefix ns3: <http://purl.org/dc/terms/> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/dataset/67264-collection1> a ns2:Dataset ;
+    rdfs:label "The Italian Registry of NMD Patients"@en ;
+    ns3:hasVersion "1.0" ;
+    ns3:isPartOf <BASE_URI/fdp/catalog/registry> ;
+    ns3:issued "Tue Mar 03 16:21:43 GMT 2015"^^xsd:date ;
+    ns3:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns3:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns3:modified "Thu Jun 04 12:04:06 GMT 2015"^^xsd:date ;
+    ns3:publisher <BASE_URI/organization/67264> ;
+    ns3:title "The Italian Registry of NMD Patients"@en ;
+    ns1:metadataIdentifier <BASE_URI/fdp/registry/67264-collection1/metadataID> ;
+    ns1:metadataIssued "2017-03-16"^^xsd:date ;
+    ns1:metadataModified "2017-03-16"^^xsd:date ;
+    ns2:keyword "The Italian Registry of NMD Patients",
+        "registry" ;
+    ns2:landingPage <http://catalogue.rd-connect.eu/web/duchenne-and-becker-muscular-dystrophy-and-spinal-muscular-dystrophy-patient-registries-in-italy/reg_home> ;
+    ns2:theme <http://dbpedia.org/resource/Disease_registry>,
+        <http://www.orpha.net/ORDO/Orphanet_100044>,
+        <http://www.orpha.net/ORDO/Orphanet_100045>,
+        <http://www.orpha.net/ORDO/Orphanet_101081>,
+        <http://www.orpha.net/ORDO/Orphanet_101082>,
+        <http://www.orpha.net/ORDO/Orphanet_101083>,
+        <http://www.orpha.net/ORDO/Orphanet_101084>,
+        <http://www.orpha.net/ORDO/Orphanet_101085>,
+        <http://www.orpha.net/ORDO/Orphanet_101097>,
+        <http://www.orpha.net/ORDO/Orphanet_101101>,
+        <http://www.orpha.net/ORDO/Orphanet_206546>,
+        <http://www.orpha.net/ORDO/Orphanet_206559>,
+        <http://www.orpha.net/ORDO/Orphanet_206564>,
+        <http://www.orpha.net/ORDO/Orphanet_228174>,
+        <http://www.orpha.net/ORDO/Orphanet_266>,
+        <http://www.orpha.net/ORDO/Orphanet_268>,
+        <http://www.orpha.net/ORDO/Orphanet_269>,
+        <http://www.orpha.net/ORDO/Orphanet_280333>,
+        <http://www.orpha.net/ORDO/Orphanet_284232>,
+        <http://www.orpha.net/ORDO/Orphanet_300319>,
+        <http://www.orpha.net/ORDO/Orphanet_34515>,
+        <http://www.orpha.net/ORDO/Orphanet_363623>,
+        <http://www.orpha.net/ORDO/Orphanet_70>,
+        <http://www.orpha.net/ORDO/Orphanet_83418>,
+        <http://www.orpha.net/ORDO/Orphanet_83419>,
+        <http://www.orpha.net/ORDO/Orphanet_83420>,
+        <http://www.orpha.net/ORDO/Orphanet_97242>,
+        <http://www.orpha.net/ORDO/Orphanet_98856>,
+        <http://www.orpha.net/ORDO/Orphanet_98895>,
+        <http://www.orpha.net/ORDO/Orphanet_98896>,
+        <http://www.orpha.net/ORDO/Orphanet_99936>,
+        <http://www.orpha.net/ORDO/Orphanet_99938>,
+        <http://www.orpha.net/ORDO/Orphanet_99939>,
+        <http://www.orpha.net/ORDO/Orphanet_99940>,
+        <http://www.orpha.net/ORDO/Orphanet_99941>,
+        <http://www.orpha.net/ORDO/Orphanet_99942>,
+        <http://www.orpha.net/ORDO/Orphanet_99943>,
+        <http://www.orpha.net/ORDO/Orphanet_99944>,
+        <http://www.orpha.net/ORDO/Orphanet_99946>,
+        <http://www.orpha.net/ORDO/Orphanet_99947> .
+
+<BASE_URI/fdp/registry/67264-collection1/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns3:identifier "67264-collection1" .
+
+<BASE_URI/organization/67264> a ns4:Organization ;
+    ns4:name "The Italian Registry of NMD Patients"@en .
+

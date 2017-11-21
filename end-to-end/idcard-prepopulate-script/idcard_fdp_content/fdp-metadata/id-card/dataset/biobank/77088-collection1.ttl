@@ -1,0 +1,46 @@
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://www.w3.org/ns/dcat#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/dataset/77088-collection1> a ns2:Dataset ;
+    rdfs:label "Genomic and Genetic  Disorders Biobank"@en ;
+    ns1:hasVersion "1.0" ;
+    ns1:isPartOf <BASE_URI/fdp/catalog/biobank> ;
+    ns1:issued "Wed Apr 01 10:17:04 GMT 2015"^^xsd:date ;
+    ns1:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns1:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns1:modified "Tue Jun 07 16:01:27 GMT 2016"^^xsd:date ;
+    ns1:publisher <BASE_URI/organization/77088> ;
+    ns1:title "Genomic and Genetic  Disorders Biobank"@en ;
+    ns4:metadataIdentifier <BASE_URI/fdp/biobank/77088-collection1/metadataID> ;
+    ns4:metadataIssued "2017-03-16"^^xsd:date ;
+    ns4:metadataModified "2017-03-16"^^xsd:date ;
+    ns2:keyword "Genomic and Genetic  Disorders Biobank",
+        "biobank" ;
+    ns2:landingPage <http://catalogue.rd-connect.eu/web/genomic-disorders-biobank/bb_home> ;
+    ns2:theme <http://dbpedia.org/resource/Biobank>,
+        <http://edamontology.org/topic_3337>,
+        <http://www.orpha.net/ORDO/Orphanet_2322>,
+        <http://www.orpha.net/ORDO/Orphanet_3221>,
+        <http://www.orpha.net/ORDO/Orphanet_399>,
+        <http://www.orpha.net/ORDO/Orphanet_435>,
+        <http://www.orpha.net/ORDO/Orphanet_50>,
+        <http://www.orpha.net/ORDO/Orphanet_666>,
+        <http://www.orpha.net/ORDO/Orphanet_739>,
+        <http://www.orpha.net/ORDO/Orphanet_778>,
+        <http://www.orpha.net/ORDO/Orphanet_84>,
+        <http://www.orpha.net/ORDO/Orphanet_870>,
+        <http://www.orpha.net/ORDO/Orphanet_881>,
+        <http://www.orpha.net/ORDO/Orphanet_904> .
+
+<BASE_URI/fdp/biobank/77088-collection1/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns1:identifier "77088-collection1" .
+
+<BASE_URI/organization/77088> a ns3:Organization ;
+    ns3:name "Genomic and Genetic  Disorders Biobank"@en .
+

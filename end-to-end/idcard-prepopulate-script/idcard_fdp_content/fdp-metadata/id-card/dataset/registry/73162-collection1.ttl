@@ -1,0 +1,39 @@
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://www.w3.org/ns/dcat#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/dataset/73162-collection1> a ns2:Dataset ;
+    rdfs:label "FMF: Italian registry for familial mediterranean fever"@en ;
+    ns1:hasVersion "1.0" ;
+    ns1:isPartOf <BASE_URI/fdp/catalog/registry> ;
+    ns1:issued "Fri Mar 27 09:36:08 GMT 2015"^^xsd:date ;
+    ns1:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns1:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns1:modified "Fri Mar 27 10:47:43 GMT 2015"^^xsd:date ;
+    ns1:publisher <BASE_URI/organization/73162> ;
+    ns1:title "FMF: Italian registry for familial mediterranean fever"@en ;
+    ns4:metadataIdentifier <BASE_URI/fdp/registry/73162-collection1/metadataID> ;
+    ns4:metadataIssued "2017-03-16"^^xsd:date ;
+    ns4:metadataModified "2017-03-16"^^xsd:date ;
+    ns2:keyword "FMF: Italian registry for familial mediterranean fever",
+        "registry" ;
+    ns2:landingPage <http://catalogue.rd-connect.eu/web/fmf-italian-registry-for-familial-mediterranean-fever-in-the-young/reg_home> ;
+    ns2:theme <http://dbpedia.org/resource/Disease_registry>,
+        <http://www.orpha.net/ORDO/Orphanet_1451>,
+        <http://www.orpha.net/ORDO/Orphanet_2686>,
+        <http://www.orpha.net/ORDO/Orphanet_32960>,
+        <http://www.orpha.net/ORDO/Orphanet_342>,
+        <http://www.orpha.net/ORDO/Orphanet_343>,
+        <http://www.orpha.net/ORDO/Orphanet_575> .
+
+<BASE_URI/fdp/registry/73162-collection1/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns1:identifier "73162-collection1" .
+
+<BASE_URI/organization/73162> a ns3:Organization ;
+    ns3:name "FMF: Italian registry for familial mediterranean fever"@en .
+

@@ -1,0 +1,31 @@
+@prefix ns1: <http://www.w3.org/ns/dcat#> .
+@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/distibution/75272-collection1-html> a ns1:Distribution ;
+    rdfs:label "Italian registry of Growth Hormone html distribution"@en ;
+    ns2:hasVersion "1.0" ;
+    ns2:isPartOf <BASE_URI/fdp/dataset/75272-collection1> ;
+    ns2:issued "Mon Mar 30 13:42:28 GMT 2015"^^xsd:date ;
+    ns2:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns2:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns2:modified "Thu Oct 27 20:46:10 GMT 2016"^^xsd:date ;
+    ns2:publisher <BASE_URI/organization/75272> ;
+    ns2:title "Italian registry of Growth Hormone html distribution"@en ;
+    ns4:metadataIdentifier <BASE_URI/fdp/distibution/75272-collection1_html/metadataID> ;
+    ns4:metadataIssued "2017-03-16"^^xsd:date ;
+    ns4:metadataModified "2017-03-16"^^xsd:date ;
+    ns1:accessURL <http://www.iss.it/rnoc/> ;
+    ns1:mediaType "text/html" .
+
+<BASE_URI/fdp/distibution/75272-collection1_html/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns2:identifier "75272-collection1-html" .
+
+<BASE_URI/organization/75272> a ns3:Organization ;
+    ns3:name "Italian registry of Growth Hormone"@en .
+

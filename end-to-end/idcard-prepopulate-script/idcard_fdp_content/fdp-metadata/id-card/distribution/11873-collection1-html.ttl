@@ -1,0 +1,31 @@
+@prefix ns1: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns2: <http://www.w3.org/ns/dcat#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/distibution/11873-collection1-html> a ns2:Distribution ;
+    rdfs:label "Simons VIP CONNECT html distribution"@en ;
+    ns4:hasVersion "1.0" ;
+    ns4:isPartOf <BASE_URI/fdp/dataset/11873-collection1> ;
+    ns4:issued "Wed Jan 07 20:04:15 GMT 2015"^^xsd:date ;
+    ns4:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns4:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns4:modified "Mon Nov 07 17:15:36 GMT 2016"^^xsd:date ;
+    ns4:publisher <BASE_URI/organization/11873> ;
+    ns4:title "Simons VIP CONNECT html distribution"@en ;
+    ns1:metadataIdentifier <BASE_URI/fdp/distibution/11873-collection1_html/metadataID> ;
+    ns1:metadataIssued "2017-03-16"^^xsd:date ;
+    ns1:metadataModified "2017-03-16"^^xsd:date ;
+    ns2:accessURL <https://simonsvipconnect.org> ;
+    ns2:mediaType "text/html" .
+
+<BASE_URI/fdp/distibution/11873-collection1_html/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns4:identifier "11873-collection1-html" .
+
+<BASE_URI/organization/11873> a ns3:Organization ;
+    ns3:name "Simons VIP CONNECT"@en .
+

@@ -1,0 +1,37 @@
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns4: <http://www.w3.org/ns/dcat#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/dataset/167250-collection1> a ns4:Dataset ;
+    rdfs:label "Rare disease biobank and registry EXAMPLE"@en ;
+    ns1:hasVersion "1.0" ;
+    ns1:isPartOf <BASE_URI/fdp/catalog/registry> ;
+    ns1:issued "Fri Feb 19 11:56:38 GMT 2016"^^xsd:date ;
+    ns1:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns1:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns1:modified "Thu Aug 04 12:41:09 GMT 2016"^^xsd:date ;
+    ns1:publisher <BASE_URI/organization/167250> ;
+    ns1:title "Rare disease biobank and registry EXAMPLE"@en ;
+    ns3:metadataIdentifier <BASE_URI/fdp/registry/167250-collection1/metadataID> ;
+    ns3:metadataIssued "2017-03-16"^^xsd:date ;
+    ns3:metadataModified "2017-03-16"^^xsd:date ;
+    ns4:keyword "Rare disease biobank and registry EXAMPLE",
+        "registry" ;
+    ns4:landingPage <http://catalogue.rd-connect.eu/web/rare-disease-registry-for-workshop-example/reg_home> ;
+    ns4:theme <http://dbpedia.org/resource/Disease_registry>,
+        <http://www.orpha.net/ORDO/Orphanet_262>,
+        <http://www.orpha.net/ORDO/Orphanet_71859>,
+        <http://www.orpha.net/ORDO/Orphanet_93213>,
+        <http://www.orpha.net/ORDO/Orphanet_98056> .
+
+<BASE_URI/fdp/registry/167250-collection1/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns1:identifier "167250-collection1" .
+
+<BASE_URI/organization/167250> a ns2:Organization ;
+    ns2:name "Rare disease biobank and registry EXAMPLE"@en .
+

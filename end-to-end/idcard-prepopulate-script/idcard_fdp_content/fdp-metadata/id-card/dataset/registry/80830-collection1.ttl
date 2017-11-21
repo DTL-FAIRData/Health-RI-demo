@@ -1,0 +1,34 @@
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://www.w3.org/ns/dcat#> .
+@prefix ns3: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/dataset/80830-collection1> a ns2:Dataset ;
+    rdfs:label "Spanish alpha-1 antitrypsin deficiency registry"@en ;
+    ns1:hasVersion "1.0" ;
+    ns1:isPartOf <BASE_URI/fdp/catalog/registry> ;
+    ns1:issued "Thu Apr 16 10:54:11 GMT 2015"^^xsd:date ;
+    ns1:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns1:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns1:modified "Fri Oct 28 10:18:55 GMT 2016"^^xsd:date ;
+    ns1:publisher <BASE_URI/organization/80830> ;
+    ns1:title "Spanish alpha-1 antitrypsin deficiency registry"@en ;
+    ns3:metadataIdentifier <BASE_URI/fdp/registry/80830-collection1/metadataID> ;
+    ns3:metadataIssued "2017-03-16"^^xsd:date ;
+    ns3:metadataModified "2017-03-16"^^xsd:date ;
+    ns2:keyword "Spanish alpha-1 antitrypsin deficiency registry",
+        "registry" ;
+    ns2:landingPage <http://catalogue.rd-connect.eu/web/spanish-alpha-1-antitrypsin-deficiency-registry-redaat-/reg_home> ;
+    ns2:theme <http://dbpedia.org/resource/Disease_registry>,
+        <http://www.orpha.net/ORDO/Orphanet_60> .
+
+<BASE_URI/fdp/registry/80830-collection1/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns1:identifier "80830-collection1" .
+
+<BASE_URI/organization/80830> a ns4:Organization ;
+    ns4:name "Spanish alpha-1 antitrypsin deficiency registry"@en .
+

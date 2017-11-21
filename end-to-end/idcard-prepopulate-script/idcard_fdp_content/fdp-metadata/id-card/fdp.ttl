@@ -1,0 +1,35 @@
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://www.re3data.org/schema/3-0#> .
+@prefix ns3: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns4: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp> a ns2:Repository ;
+    rdfs:label "ID card FAIR data point"@en ;
+    ns4:description "This is a prototype FDP for hosting rd connect's dataset"@en ;
+    ns4:hasVersion "0.1 Beta" ;
+    ns4:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns4:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns4:publisher <http://biosemantics.humgen.nl> ;
+    ns4:title "ID card FAIR data point"@en ;
+    ns3:metadataIdentifier <BASE_URI/fdp/fdp-metadataID> ;
+    ns3:metadataIssued "2017-03-16"^^xsd:date ;
+    ns3:metadataModified "2017-03-16"^^xsd:date ;
+    ns2:dataCatalog <BASE_URI/fdp/catalog/biobank>,
+        <BASE_URI/fdp/catalog/registry> ;
+    ns2:institutionCountry <http://lexvo.org/id/iso3166/NL> ;
+    ns2:repositoryIdentifier <BASE_URI/fdp/fdp-repositoryID> ;
+    ns2:startDate "2016-02-01"^^xsd:date .
+
+<BASE_URI/fdp/fdp-metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns4:identifier "fdp-metadataID" .
+
+<BASE_URI/fdp/fdp-repositoryID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns4:identifier "fdp-repositoryID" .
+
+<http://biosemantics.humgen.nl> a ns1:Organization ;
+    ns1:name "Biosemantics LUMC"@en .
+

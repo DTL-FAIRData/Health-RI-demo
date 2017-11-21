@@ -1,0 +1,44 @@
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://www.w3.org/ns/dcat#> .
+@prefix ns3: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/catalog/biobank> a ns2:Catalog ;
+    rdfs:label "Rd connect's patient biobank catalog"@en ;
+    ns1:hasVersion "1.0" ;
+    ns1:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns1:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns1:publisher <http://biosemantics.humgen.nl> ;
+    ns1:title "Rd connect's patient biobank catalog"@en ;
+    ns3:metadataIdentifier <BASE_URI/fdp/catalog/biobank/metadataID> ;
+    ns3:metadataIssued "2017-03-16"^^xsd:date ;
+    ns3:metadataModified "2017-03-16"^^xsd:date ;
+    ns2:dataset <BASE_URI/fdp/dataset/168562-collection1>,
+        <BASE_URI/fdp/dataset/168694-collection1>,
+        <BASE_URI/fdp/dataset/173631-collection1>,
+        <BASE_URI/fdp/dataset/44001-collection1>,
+        <BASE_URI/fdp/dataset/45274-collection1>,
+        <BASE_URI/fdp/dataset/45401-collection1>,
+        <BASE_URI/fdp/dataset/62316-collection1>,
+        <BASE_URI/fdp/dataset/76957-collection1>,
+        <BASE_URI/fdp/dataset/77088-collection1>,
+        <BASE_URI/fdp/dataset/77219-collection1>,
+        <BASE_URI/fdp/dataset/77350-collection1>,
+        <BASE_URI/fdp/dataset/77489-collection1>,
+        <BASE_URI/fdp/dataset/77630-collection1>,
+        <BASE_URI/fdp/dataset/77761-collection1>,
+        <BASE_URI/fdp/dataset/87919-collection1>,
+        <BASE_URI/fdp/dataset/88051-collection1> ;
+    ns2:themeTaxonomy <http://dbpedia.org/resource/Biobank>,
+        <http://edamontology.org/topic_3337> .
+
+<BASE_URI/fdp/catalog/biobank/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns1:identifier "biobank" .
+
+<http://biosemantics.humgen.nl> a ns4:Organization ;
+    ns4:name "Biosemantics LUMC"@en .
+

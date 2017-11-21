@@ -1,0 +1,36 @@
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://www.w3.org/ns/dcat#> .
+@prefix ns4: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/dataset/115131-collection1> a ns3:Dataset ;
+    rdfs:label "FranceCoag: French cohort of patients suffering from hereditary coagulation disorders"@en ;
+    ns1:hasVersion "1.0" ;
+    ns1:isPartOf <BASE_URI/fdp/catalog/registry> ;
+    ns1:issued "Thu Oct 15 12:42:03 GMT 2015"^^xsd:date ;
+    ns1:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns1:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns1:modified "Thu Oct 15 13:29:19 GMT 2015"^^xsd:date ;
+    ns1:publisher <BASE_URI/organization/115131> ;
+    ns1:title "FranceCoag: French cohort of patients suffering from hereditary coagulation disorders"@en ;
+    ns4:metadataIdentifier <BASE_URI/fdp/registry/115131-collection1/metadataID> ;
+    ns4:metadataIssued "2017-03-16"^^xsd:date ;
+    ns4:metadataModified "2017-03-16"^^xsd:date ;
+    ns3:keyword "FranceCoag: French cohort of patients suffering from hereditary coagulation disorders",
+        "registry" ;
+    ns3:landingPage <http://catalogue.rd-connect.eu/web/francecoag-french-prospective-cohort-of-patients-affected-with-haemophilia-or-severe-form-of-other-/reg_home> ;
+    ns3:theme <http://dbpedia.org/resource/Disease_registry>,
+        <http://www.orpha.net/ORDO/Orphanet_903>,
+        <http://www.orpha.net/ORDO/Orphanet_98878>,
+        <http://www.orpha.net/ORDO/Orphanet_98879> .
+
+<BASE_URI/fdp/registry/115131-collection1/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns1:identifier "115131-collection1" .
+
+<BASE_URI/organization/115131> a ns2:Organization ;
+    ns2:name "FranceCoag: French cohort of patients suffering from hereditary coagulation disorders"@en .
+

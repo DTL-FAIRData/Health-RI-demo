@@ -1,0 +1,26 @@
+version: "2.0"
+services:
+# FDP for the rivm 
+ fdp-rivm:
+  image: dtlfair/fdp:latest
+  ports:
+   - "8080:8080"
+
+# Create simple server to host rdf files required by demonstrator
+ simple-server:
+  build: ./simple-server
+  ports:
+   - "8081:8080"
+
+# Blazegraph for the demonstrator
+ blazegraph:
+  image: rajireturn/blazegraph
+  ports:
+   - "8090:8080"
+
+# Script for pre populatingfdp with rivm metadata
+ rivm-prepopu-script:
+  build : ./rivm-prepopulate-script
+  depends_on:
+   - fdp-rivm
+  network_mode: host

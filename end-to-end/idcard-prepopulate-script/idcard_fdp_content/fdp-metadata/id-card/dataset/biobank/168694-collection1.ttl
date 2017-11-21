@@ -1,0 +1,34 @@
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns3: <http://www.w3.org/ns/dcat#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/dataset/168694-collection1> a ns3:Dataset ;
+    rdfs:label "NEUROMUSCULAR TISSUE BANK UNIVERSITY OF LJUBLJANA"@en ;
+    ns1:hasVersion "1.0" ;
+    ns1:isPartOf <BASE_URI/fdp/catalog/biobank> ;
+    ns1:issued "Fri Feb 26 14:32:40 GMT 2016"^^xsd:date ;
+    ns1:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns1:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns1:modified "Wed Feb 15 21:21:43 GMT 2017"^^xsd:date ;
+    ns1:publisher <BASE_URI/organization/168694> ;
+    ns1:title "NEUROMUSCULAR TISSUE BANK UNIVERSITY OF LJUBLJANA"@en ;
+    ns2:metadataIdentifier <BASE_URI/fdp/biobank/168694-collection1/metadataID> ;
+    ns2:metadataIssued "2017-03-16"^^xsd:date ;
+    ns2:metadataModified "2017-03-16"^^xsd:date ;
+    ns3:keyword "NEUROMUSCULAR TISSUE BANK UNIVERSITY OF LJUBLJANA",
+        "biobank" ;
+    ns3:landingPage <http://catalogue.rd-connect.eu/web/neuromuscular-tissue-bank-university-of-ljubljana/bb_home> ;
+    ns3:theme <http://dbpedia.org/resource/Biobank>,
+        <http://edamontology.org/topic_3337> .
+
+<BASE_URI/fdp/biobank/168694-collection1/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns1:identifier "168694-collection1" .
+
+<BASE_URI/organization/168694> a ns4:Organization ;
+    ns4:name "NEUROMUSCULAR TISSUE BANK UNIVERSITY OF LJUBLJANA"@en .
+

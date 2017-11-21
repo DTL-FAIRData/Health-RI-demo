@@ -1,0 +1,31 @@
+@prefix ns1: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://purl.org/dc/terms/> .
+@prefix ns4: <http://www.w3.org/ns/dcat#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/distibution/73425-collection1-html> a ns4:Distribution ;
+    rdfs:label "European registry of sporadic degenerative ataxia with adult onset html distribution"@en ;
+    ns3:hasVersion "1.0" ;
+    ns3:isPartOf <BASE_URI/fdp/dataset/73425-collection1> ;
+    ns3:issued "Fri Mar 27 09:55:03 GMT 2015"^^xsd:date ;
+    ns3:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns3:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns3:modified "Thu Jun 04 11:05:19 GMT 2015"^^xsd:date ;
+    ns3:publisher <BASE_URI/organization/73425> ;
+    ns3:title "European registry of sporadic degenerative ataxia with adult onset html distribution"@en ;
+    ns1:metadataIdentifier <BASE_URI/fdp/distibution/73425-collection1_html/metadataID> ;
+    ns1:metadataIssued "2017-03-16"^^xsd:date ;
+    ns1:metadataModified "2017-03-16"^^xsd:date ;
+    ns4:accessURL <http://www.ataxia-study-group.net/html/studies/sportax?clps2509_n1718031554=1> ;
+    ns4:mediaType "text/html" .
+
+<BASE_URI/fdp/distibution/73425-collection1_html/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns3:identifier "73425-collection1-html" .
+
+<BASE_URI/organization/73425> a ns2:Organization ;
+    ns2:name "European registry of sporadic degenerative ataxia with adult onset"@en .
+

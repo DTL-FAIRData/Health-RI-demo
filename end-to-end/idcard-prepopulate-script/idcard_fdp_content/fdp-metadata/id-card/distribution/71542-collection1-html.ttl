@@ -1,0 +1,31 @@
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://www.w3.org/ns/dcat#> .
+@prefix ns3: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/distibution/71542-collection1-html> a ns2:Distribution ;
+    rdfs:label "Ring14 Clinical database html distribution"@en ;
+    ns1:hasVersion "1.0" ;
+    ns1:isPartOf <BASE_URI/fdp/dataset/71542-collection1> ;
+    ns1:issued "Tue Mar 24 16:54:52 GMT 2015"^^xsd:date ;
+    ns1:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns1:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns1:modified "Wed Feb 17 15:31:08 GMT 2016"^^xsd:date ;
+    ns1:publisher <BASE_URI/organization/71542> ;
+    ns1:title "Ring14 Clinical database html distribution"@en ;
+    ns3:metadataIdentifier <BASE_URI/fdp/distibution/71542-collection1_html/metadataID> ;
+    ns3:metadataIssued "2017-03-16"^^xsd:date ;
+    ns3:metadataModified "2017-03-16"^^xsd:date ;
+    ns2:accessURL <http://www.ring14.org/eng/120/database/> ;
+    ns2:mediaType "text/html" .
+
+<BASE_URI/fdp/distibution/71542-collection1_html/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns1:identifier "71542-collection1-html" .
+
+<BASE_URI/organization/71542> a ns4:Organization ;
+    ns4:name "Ring14 Clinical database"@en .
+

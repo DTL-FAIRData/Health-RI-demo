@@ -1,0 +1,39 @@
+@prefix ns1: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://purl.org/dc/terms/> .
+@prefix ns4: <http://www.w3.org/ns/dcat#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/dataset/130321-collection1> a ns4:Dataset ;
+    rdfs:label "Registry NXT - Genzyme's Rare Disease Registries"@en ;
+    ns3:hasVersion "1.0" ;
+    ns3:isPartOf <BASE_URI/fdp/catalog/registry> ;
+    ns3:issued "Wed Oct 28 14:16:56 GMT 2015"^^xsd:date ;
+    ns3:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns3:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns3:modified "Wed Oct 28 15:40:40 GMT 2015"^^xsd:date ;
+    ns3:publisher <BASE_URI/organization/130321> ;
+    ns3:title "Registry NXT - Genzyme's Rare Disease Registries"@en ;
+    ns1:metadataIdentifier <BASE_URI/fdp/registry/130321-collection1/metadataID> ;
+    ns1:metadataIssued "2017-03-16"^^xsd:date ;
+    ns1:metadataModified "2017-03-16"^^xsd:date ;
+    ns4:keyword "Registry NXT - Genzyme's Rare Disease Registries",
+        "registry" ;
+    ns4:landingPage <http://catalogue.rd-connect.eu/web/the-international-collaborative-gaucher-group-gaucher-registry/reg_home> ;
+    ns4:theme <http://dbpedia.org/resource/Disease_registry>,
+        <http://www.orpha.net/ORDO/Orphanet_324>,
+        <http://www.orpha.net/ORDO/Orphanet_365>,
+        <http://www.orpha.net/ORDO/Orphanet_579>,
+        <http://www.orpha.net/ORDO/Orphanet_77259>,
+        <http://www.orpha.net/ORDO/Orphanet_77260>,
+        <http://www.orpha.net/ORDO/Orphanet_77261> .
+
+<BASE_URI/fdp/registry/130321-collection1/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns3:identifier "130321-collection1" .
+
+<BASE_URI/organization/130321> a ns2:Organization ;
+    ns2:name "Registry NXT - Genzyme's Rare Disease Registries"@en .
+

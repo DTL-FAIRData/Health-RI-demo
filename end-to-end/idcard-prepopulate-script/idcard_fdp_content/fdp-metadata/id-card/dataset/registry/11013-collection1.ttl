@@ -1,0 +1,33 @@
+@prefix ns1: <http://www.w3.org/ns/dcat#> .
+@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix ns3: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/dataset/11013-collection1> a ns1:Dataset ;
+    rdfs:label "Danubian Biobank Consortium"@en ;
+    ns2:hasVersion "1.0" ;
+    ns2:isPartOf <BASE_URI/fdp/catalog/registry> ;
+    ns2:issued "Tue Jan 06 15:44:30 GMT 2015"^^xsd:date ;
+    ns2:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns2:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns2:modified "Thu Jan 29 16:59:41 GMT 2015"^^xsd:date ;
+    ns2:publisher <BASE_URI/organization/11013> ;
+    ns2:title "Danubian Biobank Consortium"@en ;
+    ns3:metadataIdentifier <BASE_URI/fdp/registry/11013-collection1/metadataID> ;
+    ns3:metadataIssued "2017-03-16"^^xsd:date ;
+    ns3:metadataModified "2017-03-16"^^xsd:date ;
+    ns1:keyword "Danubian Biobank Consortium",
+        "registry" ;
+    ns1:landingPage <http://catalogue.rd-connect.eu/web/danubian-biobank-consortium/reg_home> ;
+    ns1:theme <http://dbpedia.org/resource/Disease_registry> .
+
+<BASE_URI/fdp/registry/11013-collection1/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns2:identifier "11013-collection1" .
+
+<BASE_URI/organization/11013> a ns4:Organization ;
+    ns4:name "Danubian Biobank Consortium"@en .
+

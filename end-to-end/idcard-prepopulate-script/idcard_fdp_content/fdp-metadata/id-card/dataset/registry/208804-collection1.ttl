@@ -1,0 +1,49 @@
+@prefix ns1: <http://www.w3.org/ns/dcat#> .
+@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix ns3: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/dataset/208804-collection1> a ns1:Dataset ;
+    rdfs:label "Primary Immunodeficiency Diseases Registry at USIDNET"@en ;
+    ns2:hasVersion "1.0" ;
+    ns2:isPartOf <BASE_URI/fdp/catalog/registry> ;
+    ns2:issued "Tue Nov 08 14:51:20 GMT 2016"^^xsd:date ;
+    ns2:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns2:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns2:modified "Tue Nov 08 15:42:39 GMT 2016"^^xsd:date ;
+    ns2:publisher <BASE_URI/organization/208804> ;
+    ns2:title "Primary Immunodeficiency Diseases Registry at USIDNET"@en ;
+    ns3:metadataIdentifier <BASE_URI/fdp/registry/208804-collection1/metadataID> ;
+    ns3:metadataIssued "2017-03-16"^^xsd:date ;
+    ns3:metadataModified "2017-03-16"^^xsd:date ;
+    ns1:keyword "Primary Immunodeficiency Diseases Registry at USIDNET",
+        "registry" ;
+    ns1:landingPage <http://catalogue.rd-connect.eu/web/primary-immunodeficiency-diseases-registry-at-usidnet/reg_home> ;
+    ns1:theme <http://dbpedia.org/resource/Disease_registry>,
+        <http://www.orpha.net/ORDO/Orphanet_101988>,
+        <http://www.orpha.net/ORDO/Orphanet_1334>,
+        <http://www.orpha.net/ORDO/Orphanet_158032>,
+        <http://www.orpha.net/ORDO/Orphanet_169095>,
+        <http://www.orpha.net/ORDO/Orphanet_169150>,
+        <http://www.orpha.net/ORDO/Orphanet_169346>,
+        <http://www.orpha.net/ORDO/Orphanet_169361>,
+        <http://www.orpha.net/ORDO/Orphanet_183660>,
+        <http://www.orpha.net/ORDO/Orphanet_183669>,
+        <http://www.orpha.net/ORDO/Orphanet_183707>,
+        <http://www.orpha.net/ORDO/Orphanet_210115>,
+        <http://www.orpha.net/ORDO/Orphanet_3261>,
+        <http://www.orpha.net/ORDO/Orphanet_331223>,
+        <http://www.orpha.net/ORDO/Orphanet_331244>,
+        <http://www.orpha.net/ORDO/Orphanet_379>,
+        <http://www.orpha.net/ORDO/Orphanet_906> .
+
+<BASE_URI/fdp/registry/208804-collection1/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns2:identifier "208804-collection1" .
+
+<BASE_URI/organization/208804> a ns4:Organization ;
+    ns4:name "Primary Immunodeficiency Diseases Registry at USIDNET"@en .
+

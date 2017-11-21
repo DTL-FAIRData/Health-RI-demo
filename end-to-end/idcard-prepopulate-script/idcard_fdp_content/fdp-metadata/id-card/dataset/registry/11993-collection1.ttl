@@ -1,0 +1,34 @@
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns3: <http://purl.org/dc/terms/> .
+@prefix ns4: <http://www.w3.org/ns/dcat#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/dataset/11993-collection1> a ns4:Dataset ;
+    rdfs:label "The Sturge-Weber Registry (SWF)"@en ;
+    ns3:hasVersion "1.0" ;
+    ns3:isPartOf <BASE_URI/fdp/catalog/registry> ;
+    ns3:issued "Wed Jan 07 20:38:55 GMT 2015"^^xsd:date ;
+    ns3:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns3:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns3:modified "Mon Jan 12 18:08:03 GMT 2015"^^xsd:date ;
+    ns3:publisher <BASE_URI/organization/11993> ;
+    ns3:title "The Sturge-Weber Registry (SWF)"@en ;
+    ns2:metadataIdentifier <BASE_URI/fdp/registry/11993-collection1/metadataID> ;
+    ns2:metadataIssued "2017-03-16"^^xsd:date ;
+    ns2:metadataModified "2017-03-16"^^xsd:date ;
+    ns4:keyword "The Sturge-Weber Registry (SWF)",
+        "registry" ;
+    ns4:landingPage <http://catalogue.rd-connect.eu/web/the-sturge-weber-registry-swf-/reg_home> ;
+    ns4:theme <http://dbpedia.org/resource/Disease_registry>,
+        <http://www.orpha.net/ORDO/Orphanet_3205> .
+
+<BASE_URI/fdp/registry/11993-collection1/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns3:identifier "11993-collection1" .
+
+<BASE_URI/organization/11993> a ns1:Organization ;
+    ns1:name "The Sturge-Weber Registry (SWF)"@en .
+

@@ -1,0 +1,43 @@
+@prefix ns1: <http://www.w3.org/ns/dcat#> .
+@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/dataset/128572-collection1> a ns1:Dataset ;
+    rdfs:label "RaDiCo-FARD - French national cohort on the individual burden in the course of rare skin diseases"@en ;
+    ns2:hasVersion "1.0" ;
+    ns2:isPartOf <BASE_URI/fdp/catalog/registry> ;
+    ns2:issued "Wed Oct 21 08:41:05 GMT 2015"^^xsd:date ;
+    ns2:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns2:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns2:modified "Tue Apr 12 15:44:11 GMT 2016"^^xsd:date ;
+    ns2:publisher <BASE_URI/organization/128572> ;
+    ns2:title "RaDiCo-FARD - French national cohort on the individual burden in the course of rare skin diseases"@en ;
+    ns4:metadataIdentifier <BASE_URI/fdp/registry/128572-collection1/metadataID> ;
+    ns4:metadataIssued "2017-03-16"^^xsd:date ;
+    ns4:metadataModified "2017-03-16"^^xsd:date ;
+    ns1:keyword "RaDiCo-FARD - French national cohort on the individual burden in the course of rare skin diseases",
+        "registry" ;
+    ns1:landingPage <http://catalogue.rd-connect.eu/web/radico-fard/reg_home> ;
+    ns1:theme <http://dbpedia.org/resource/Disease_registry>,
+        <http://www.orpha.net/ORDO/Orphanet_201>,
+        <http://www.orpha.net/ORDO/Orphanet_464>,
+        <http://www.orpha.net/ORDO/Orphanet_46486>,
+        <http://www.orpha.net/ORDO/Orphanet_636>,
+        <http://www.orpha.net/ORDO/Orphanet_704>,
+        <http://www.orpha.net/ORDO/Orphanet_79354>,
+        <http://www.orpha.net/ORDO/Orphanet_79361>,
+        <http://www.orpha.net/ORDO/Orphanet_79373>,
+        <http://www.orpha.net/ORDO/Orphanet_95455>,
+        <http://www.orpha.net/ORDO/Orphanet_999> .
+
+<BASE_URI/fdp/registry/128572-collection1/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns2:identifier "128572-collection1" .
+
+<BASE_URI/organization/128572> a ns3:Organization ;
+    ns3:name "RaDiCo-FARD - French national cohort on the individual burden in the course of rare skin diseases"@en .
+

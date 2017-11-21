@@ -1,0 +1,31 @@
+@prefix ns1: <http://www.w3.org/ns/dcat#> .
+@prefix ns2: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns3: <http://purl.org/dc/terms/> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/distibution/193177-collection1-html> a ns1:Distribution ;
+    rdfs:label "European Management Platform for Childhood Interstitial Lung Disease html distribution"@en ;
+    ns3:hasVersion "1.0" ;
+    ns3:isPartOf <BASE_URI/fdp/dataset/193177-collection1> ;
+    ns3:issued "Tue Jul 26 14:25:02 GMT 2016"^^xsd:date ;
+    ns3:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns3:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns3:modified "Thu Oct 27 19:26:33 GMT 2016"^^xsd:date ;
+    ns3:publisher <BASE_URI/organization/193177> ;
+    ns3:title "European Management Platform for Childhood Interstitial Lung Disease html distribution"@en ;
+    ns2:metadataIdentifier <BASE_URI/fdp/distibution/193177-collection1_html/metadataID> ;
+    ns2:metadataIssued "2017-03-16"^^xsd:date ;
+    ns2:metadataModified "2017-03-16"^^xsd:date ;
+    ns1:accessURL <http://www.klinikum.uni-muenchen.de/Child-EU/en/index.html> ;
+    ns1:mediaType "text/html" .
+
+<BASE_URI/fdp/distibution/193177-collection1_html/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns3:identifier "193177-collection1-html" .
+
+<BASE_URI/organization/193177> a ns4:Organization ;
+    ns4:name "European Management Platform for Childhood Interstitial Lung Disease"@en .
+

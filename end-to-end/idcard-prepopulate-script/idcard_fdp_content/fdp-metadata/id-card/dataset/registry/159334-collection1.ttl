@@ -1,0 +1,38 @@
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://www.w3.org/ns/dcat#> .
+@prefix ns3: <http://purl.org/dc/terms/> .
+@prefix ns4: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/dataset/159334-collection1> a ns2:Dataset ;
+    rdfs:label "Belarus severe chronic neutropenia patient registry"@en ;
+    ns3:hasVersion "1.0" ;
+    ns3:isPartOf <BASE_URI/fdp/catalog/registry> ;
+    ns3:issued "Fri Jan 15 11:49:23 GMT 2016"^^xsd:date ;
+    ns3:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns3:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns3:modified "Fri Nov 11 15:17:10 GMT 2016"^^xsd:date ;
+    ns3:publisher <BASE_URI/organization/159334> ;
+    ns3:title "Belarus severe chronic neutropenia patient registry"@en ;
+    ns4:metadataIdentifier <BASE_URI/fdp/registry/159334-collection1/metadataID> ;
+    ns4:metadataIssued "2017-03-16"^^xsd:date ;
+    ns4:metadataModified "2017-03-16"^^xsd:date ;
+    ns2:keyword "Belarus severe chronic neutropenia patient registry",
+        "registry" ;
+    ns2:landingPage <http://catalogue.rd-connect.eu/web/belarus-severe-chronic-neutropenia-patient-registry/reg_home> ;
+    ns2:theme <http://dbpedia.org/resource/Disease_registry>,
+        <http://www.orpha.net/ORDO/Orphanet_2686>,
+        <http://www.orpha.net/ORDO/Orphanet_2688>,
+        <http://www.orpha.net/ORDO/Orphanet_42738>,
+        <http://www.orpha.net/ORDO/Orphanet_79259>,
+        <http://www.orpha.net/ORDO/Orphanet_811> .
+
+<BASE_URI/fdp/registry/159334-collection1/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns3:identifier "159334-collection1" .
+
+<BASE_URI/organization/159334> a ns1:Organization ;
+    ns1:name "Belarus severe chronic neutropenia patient registry"@en .
+

@@ -1,0 +1,35 @@
+@prefix ns1: <http://www.w3.org/ns/dcat#> .
+@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/dataset/204416-collection1> a ns1:Dataset ;
+    rdfs:label "E-HOD: European network and registry for homocystinurias and methylation defects"@en ;
+    ns2:hasVersion "1.0" ;
+    ns2:isPartOf <BASE_URI/fdp/catalog/registry> ;
+    ns2:issued "Mon Oct 31 10:33:18 GMT 2016"^^xsd:date ;
+    ns2:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns2:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns2:modified "Mon Oct 31 11:04:46 GMT 2016"^^xsd:date ;
+    ns2:publisher <BASE_URI/organization/204416> ;
+    ns2:title "E-HOD: European network and registry for homocystinurias and methylation defects"@en ;
+    ns4:metadataIdentifier <BASE_URI/fdp/registry/204416-collection1/metadataID> ;
+    ns4:metadataIssued "2017-03-16"^^xsd:date ;
+    ns4:metadataModified "2017-03-16"^^xsd:date ;
+    ns1:keyword "E-HOD: European network and registry for homocystinurias and methylation defects",
+        "registry" ;
+    ns1:landingPage <http://catalogue.rd-connect.eu/web/e-hod-european-network-and-registry-for-homocystinurias-and-methylation-defects/reg_home> ;
+    ns1:theme <http://dbpedia.org/resource/Disease_registry>,
+        <http://www.orpha.net/ORDO/Orphanet_394>,
+        <http://www.orpha.net/ORDO/Orphanet_395> .
+
+<BASE_URI/fdp/registry/204416-collection1/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns2:identifier "204416-collection1" .
+
+<BASE_URI/organization/204416> a ns3:Organization ;
+    ns3:name "E-HOD: European network and registry for homocystinurias and methylation defects"@en .
+

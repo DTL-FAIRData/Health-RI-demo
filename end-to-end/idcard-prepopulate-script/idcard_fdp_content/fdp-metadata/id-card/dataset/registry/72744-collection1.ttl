@@ -1,0 +1,79 @@
+@prefix ns1: <http://www.w3.org/ns/dcat#> .
+@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix ns3: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/dataset/72744-collection1> a ns1:Dataset ;
+    rdfs:label "Tuscany registry of congenital defects"@en ;
+    ns2:hasVersion "1.0" ;
+    ns2:isPartOf <BASE_URI/fdp/catalog/registry> ;
+    ns2:issued "Fri Mar 27 09:27:31 GMT 2015"^^xsd:date ;
+    ns2:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns2:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns2:modified "Tue May 03 15:01:58 GMT 2016"^^xsd:date ;
+    ns2:publisher <BASE_URI/organization/72744> ;
+    ns2:title "Tuscany registry of congenital defects"@en ;
+    ns3:metadataIdentifier <BASE_URI/fdp/registry/72744-collection1/metadataID> ;
+    ns3:metadataIssued "2017-03-16"^^xsd:date ;
+    ns3:metadataModified "2017-03-16"^^xsd:date ;
+    ns1:keyword "Tuscany registry of congenital defects",
+        "registry" ;
+    ns1:landingPage <http://catalogue.rd-connect.eu/web/tuscany-registry-of-congenital-anomalies/reg_home> ;
+    ns1:theme <http://dbpedia.org/resource/Disease_registry>,
+        <http://www.orpha.net/ORDO/Orphanet_1114>,
+        <http://www.orpha.net/ORDO/Orphanet_116>,
+        <http://www.orpha.net/ORDO/Orphanet_1201>,
+        <http://www.orpha.net/ORDO/Orphanet_1309>,
+        <http://www.orpha.net/ORDO/Orphanet_1340>,
+        <http://www.orpha.net/ORDO/Orphanet_138>,
+        <http://www.orpha.net/ORDO/Orphanet_1465>,
+        <http://www.orpha.net/ORDO/Orphanet_1896>,
+        <http://www.orpha.net/ORDO/Orphanet_199>,
+        <http://www.orpha.net/ORDO/Orphanet_2322>,
+        <http://www.orpha.net/ORDO/Orphanet_2346>,
+        <http://www.orpha.net/ORDO/Orphanet_2368>,
+        <http://www.orpha.net/ORDO/Orphanet_280>,
+        <http://www.orpha.net/ORDO/Orphanet_287>,
+        <http://www.orpha.net/ORDO/Orphanet_2911>,
+        <http://www.orpha.net/ORDO/Orphanet_30391>,
+        <http://www.orpha.net/ORDO/Orphanet_304>,
+        <http://www.orpha.net/ORDO/Orphanet_3163>,
+        <http://www.orpha.net/ORDO/Orphanet_3205>,
+        <http://www.orpha.net/ORDO/Orphanet_35125>,
+        <http://www.orpha.net/ORDO/Orphanet_374>,
+        <http://www.orpha.net/ORDO/Orphanet_388>,
+        <http://www.orpha.net/ORDO/Orphanet_404560>,
+        <http://www.orpha.net/ORDO/Orphanet_435>,
+        <http://www.orpha.net/ORDO/Orphanet_464>,
+        <http://www.orpha.net/ORDO/Orphanet_484>,
+        <http://www.orpha.net/ORDO/Orphanet_52>,
+        <http://www.orpha.net/ORDO/Orphanet_558>,
+        <http://www.orpha.net/ORDO/Orphanet_570>,
+        <http://www.orpha.net/ORDO/Orphanet_63>,
+        <http://www.orpha.net/ORDO/Orphanet_648>,
+        <http://www.orpha.net/ORDO/Orphanet_72>,
+        <http://www.orpha.net/ORDO/Orphanet_798>,
+        <http://www.orpha.net/ORDO/Orphanet_805>,
+        <http://www.orpha.net/ORDO/Orphanet_813>,
+        <http://www.orpha.net/ORDO/Orphanet_83>,
+        <http://www.orpha.net/ORDO/Orphanet_870>,
+        <http://www.orpha.net/ORDO/Orphanet_881>,
+        <http://www.orpha.net/ORDO/Orphanet_893>,
+        <http://www.orpha.net/ORDO/Orphanet_899>,
+        <http://www.orpha.net/ORDO/Orphanet_904>,
+        <http://www.orpha.net/ORDO/Orphanet_908>,
+        <http://www.orpha.net/ORDO/Orphanet_96346>,
+        <http://www.orpha.net/ORDO/Orphanet_974>,
+        <http://www.orpha.net/ORDO/Orphanet_98861>,
+        <http://www.orpha.net/ORDO/Orphanet_98947> .
+
+<BASE_URI/fdp/registry/72744-collection1/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns2:identifier "72744-collection1" .
+
+<BASE_URI/organization/72744> a ns4:Organization ;
+    ns4:name "Tuscany registry of congenital defects"@en .
+

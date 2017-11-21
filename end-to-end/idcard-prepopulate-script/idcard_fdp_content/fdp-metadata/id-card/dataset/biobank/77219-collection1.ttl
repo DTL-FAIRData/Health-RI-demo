@@ -1,0 +1,90 @@
+@prefix ns1: <http://www.w3.org/ns/dcat#> .
+@prefix ns2: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns3: <http://purl.org/dc/terms/> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/dataset/77219-collection1> a ns1:Dataset ;
+    rdfs:label "Biobank of skeletal muscle, peripheral nerve, DNA and cell cultures"@en ;
+    ns3:hasVersion "1.0" ;
+    ns3:isPartOf <BASE_URI/fdp/catalog/biobank> ;
+    ns3:issued "Wed Apr 01 10:17:37 GMT 2015"^^xsd:date ;
+    ns3:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns3:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns3:modified "Thu Mar 10 13:01:12 GMT 2016"^^xsd:date ;
+    ns3:publisher <BASE_URI/organization/77219> ;
+    ns3:title "Biobank of skeletal muscle, peripheral nerve, DNA and cell cultures"@en ;
+    ns2:metadataIdentifier <BASE_URI/fdp/biobank/77219-collection1/metadataID> ;
+    ns2:metadataIssued "2017-03-16"^^xsd:date ;
+    ns2:metadataModified "2017-03-16"^^xsd:date ;
+    ns1:keyword "Biobank of skeletal muscle, peripheral nerve, DNA and cell cultures",
+        "biobank" ;
+    ns1:landingPage <http://catalogue.rd-connect.eu/web/dna-cell-lines-and-nerve-muscle-cardiac-tissues-bank-uos-malattie-neuromuscolari-universita-studi/bb_home> ;
+    ns1:theme <http://dbpedia.org/resource/Biobank>,
+        <http://edamontology.org/topic_3337>,
+        <http://www.orpha.net/ORDO/Orphanet_104>,
+        <http://www.orpha.net/ORDO/Orphanet_118182>,
+        <http://www.orpha.net/ORDO/Orphanet_119>,
+        <http://www.orpha.net/ORDO/Orphanet_119447>,
+        <http://www.orpha.net/ORDO/Orphanet_121131>,
+        <http://www.orpha.net/ORDO/Orphanet_122961>,
+        <http://www.orpha.net/ORDO/Orphanet_157>,
+        <http://www.orpha.net/ORDO/Orphanet_181399>,
+        <http://www.orpha.net/ORDO/Orphanet_2020>,
+        <http://www.orpha.net/ORDO/Orphanet_217629>,
+        <http://www.orpha.net/ORDO/Orphanet_219>,
+        <http://www.orpha.net/ORDO/Orphanet_2593>,
+        <http://www.orpha.net/ORDO/Orphanet_262>,
+        <http://www.orpha.net/ORDO/Orphanet_264>,
+        <http://www.orpha.net/ORDO/Orphanet_265>,
+        <http://www.orpha.net/ORDO/Orphanet_26791>,
+        <http://www.orpha.net/ORDO/Orphanet_268>,
+        <http://www.orpha.net/ORDO/Orphanet_269>,
+        <http://www.orpha.net/ORDO/Orphanet_270>,
+        <http://www.orpha.net/ORDO/Orphanet_34515>,
+        <http://www.orpha.net/ORDO/Orphanet_353>,
+        <http://www.orpha.net/ORDO/Orphanet_35697>,
+        <http://www.orpha.net/ORDO/Orphanet_35698>,
+        <http://www.orpha.net/ORDO/Orphanet_362>,
+        <http://www.orpha.net/ORDO/Orphanet_36386>,
+        <http://www.orpha.net/ORDO/Orphanet_365>,
+        <http://www.orpha.net/ORDO/Orphanet_366>,
+        <http://www.orpha.net/ORDO/Orphanet_371>,
+        <http://www.orpha.net/ORDO/Orphanet_399>,
+        <http://www.orpha.net/ORDO/Orphanet_42>,
+        <http://www.orpha.net/ORDO/Orphanet_423>,
+        <http://www.orpha.net/ORDO/Orphanet_481>,
+        <http://www.orpha.net/ORDO/Orphanet_48918>,
+        <http://www.orpha.net/ORDO/Orphanet_550>,
+        <http://www.orpha.net/ORDO/Orphanet_551>,
+        <http://www.orpha.net/ORDO/Orphanet_589>,
+        <http://www.orpha.net/ORDO/Orphanet_593>,
+        <http://www.orpha.net/ORDO/Orphanet_595>,
+        <http://www.orpha.net/ORDO/Orphanet_596>,
+        <http://www.orpha.net/ORDO/Orphanet_597>,
+        <http://www.orpha.net/ORDO/Orphanet_598>,
+        <http://www.orpha.net/ORDO/Orphanet_607>,
+        <http://www.orpha.net/ORDO/Orphanet_611>,
+        <http://www.orpha.net/ORDO/Orphanet_62>,
+        <http://www.orpha.net/ORDO/Orphanet_644>,
+        <http://www.orpha.net/ORDO/Orphanet_681>,
+        <http://www.orpha.net/ORDO/Orphanet_685>,
+        <http://www.orpha.net/ORDO/Orphanet_803>,
+        <http://www.orpha.net/ORDO/Orphanet_83420>,
+        <http://www.orpha.net/ORDO/Orphanet_83618>,
+        <http://www.orpha.net/ORDO/Orphanet_870>,
+        <http://www.orpha.net/ORDO/Orphanet_97242>,
+        <http://www.orpha.net/ORDO/Orphanet_98896>,
+        <http://www.orpha.net/ORDO/Orphanet_98908>,
+        <http://www.orpha.net/ORDO/Orphanet_99849>,
+        <http://www.orpha.net/ORDO/Orphanet_99900> .
+
+<BASE_URI/fdp/biobank/77219-collection1/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns3:identifier "77219-collection1" .
+
+<BASE_URI/organization/77219> a ns4:Organization ;
+    ns4:name "Biobank of skeletal muscle, peripheral nerve, DNA and cell cultures"@en .
+

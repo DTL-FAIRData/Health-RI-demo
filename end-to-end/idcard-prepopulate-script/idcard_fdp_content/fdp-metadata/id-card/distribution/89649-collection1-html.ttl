@@ -1,0 +1,31 @@
+@prefix ns1: <http://www.w3.org/ns/dcat#> .
+@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/distibution/89649-collection1-html> a ns1:Distribution ;
+    rdfs:label "National Registry for Haemoglobinopathies in Greece (NRHG) html distribution"@en ;
+    ns2:hasVersion "1.0" ;
+    ns2:isPartOf <BASE_URI/fdp/dataset/89649-collection1> ;
+    ns2:issued "Wed Jun 17 09:39:59 GMT 2015"^^xsd:date ;
+    ns2:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns2:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns2:modified "Wed Jun 17 12:36:12 GMT 2015"^^xsd:date ;
+    ns2:publisher <BASE_URI/organization/89649> ;
+    ns2:title "National Registry for Haemoglobinopathies in Greece (NRHG) html distribution"@en ;
+    ns4:metadataIdentifier <BASE_URI/fdp/distibution/89649-collection1_html/metadataID> ;
+    ns4:metadataIssued "2017-03-16"^^xsd:date ;
+    ns4:metadataModified "2017-03-16"^^xsd:date ;
+    ns1:accessURL <http://www.enerca.org/members-centers/center/22/national-center-for-thalassaemia-and-haemoglobinopathies-of-laikon-general-hospital-of-athens-greece> ;
+    ns1:mediaType "text/html" .
+
+<BASE_URI/fdp/distibution/89649-collection1_html/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns2:identifier "89649-collection1-html" .
+
+<BASE_URI/organization/89649> a ns3:Organization ;
+    ns3:name "National Registry for Haemoglobinopathies in Greece (NRHG)"@en .
+

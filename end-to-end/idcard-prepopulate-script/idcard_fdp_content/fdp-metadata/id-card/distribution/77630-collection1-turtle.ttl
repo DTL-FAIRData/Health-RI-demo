@@ -1,0 +1,31 @@
+@prefix ns1: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix ns3: <http://www.w3.org/ns/dcat#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/distibution/77630-collection1-ttl> a ns3:Distribution ;
+    rdfs:label "Cells lines and DNA bank of Rett syndrome and other X-linked mental retardation turtle distribution"@en ;
+    ns2:hasVersion "1.0" ;
+    ns2:isPartOf <BASE_URI/fdp/dataset/77630-collection1> ;
+    ns2:issued "Wed Apr 01 10:22:37 GMT 2015"^^xsd:date ;
+    ns2:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns2:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns2:modified "Fri May 06 08:18:00 GMT 2016"^^xsd:date ;
+    ns2:publisher <BASE_URI/organization/77630> ;
+    ns2:title "Cells lines and DNA bank of Rett syndrome and other X-linked mental retardation turtle distribution"@en ;
+    ns1:metadataIdentifier <BASE_URI/fdp/distibution/77630-collection1_ttl/metadataID> ;
+    ns1:metadataIssued "2017-03-16"^^xsd:date ;
+    ns1:metadataModified "2017-03-16"^^xsd:date ;
+    ns3:downloadURL <SIMPLE_SERVER/rdc-demo-dataset/hd-biobank.ttl> ;
+	ns3:mediaType "text/turtle" .
+
+<BASE_URI/fdp/distibution/77630-collection1_ttl/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns2:identifier "77630-collection1-ttl" .
+
+<BASE_URI/organization/77630> a ns4:Organization ;
+    ns4:name "Cells lines and DNA bank of Rett syndrome and other X-linked mental retardation"@en .
+

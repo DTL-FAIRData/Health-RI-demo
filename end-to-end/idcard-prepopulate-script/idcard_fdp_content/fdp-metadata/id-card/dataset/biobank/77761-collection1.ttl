@@ -1,0 +1,34 @@
+@prefix ns1: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns2: <http://purl.org/dc/terms/> .
+@prefix ns3: <http://www.w3.org/ns/dcat#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/dataset/77761-collection1> a ns3:Dataset ;
+    rdfs:label "Parkinson Institute Biobank"@en ;
+    ns2:hasVersion "1.0" ;
+    ns2:isPartOf <BASE_URI/fdp/catalog/biobank> ;
+    ns2:issued "Wed Apr 01 10:23:06 GMT 2015"^^xsd:date ;
+    ns2:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns2:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns2:modified "Fri Mar 04 11:32:59 GMT 2016"^^xsd:date ;
+    ns2:publisher <BASE_URI/organization/77761> ;
+    ns2:title "Parkinson Institute Biobank"@en ;
+    ns1:metadataIdentifier <BASE_URI/fdp/biobank/77761-collection1/metadataID> ;
+    ns1:metadataIssued "2017-03-16"^^xsd:date ;
+    ns1:metadataModified "2017-03-16"^^xsd:date ;
+    ns3:keyword "Parkinson Institute Biobank",
+        "biobank" ;
+    ns3:landingPage <http://catalogue.rd-connect.eu/web/parkinson-institute-biobank/bb_home> ;
+    ns3:theme <http://dbpedia.org/resource/Biobank>,
+        <http://edamontology.org/topic_3337> .
+
+<BASE_URI/fdp/biobank/77761-collection1/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns2:identifier "77761-collection1" .
+
+<BASE_URI/organization/77761> a ns4:Organization ;
+    ns4:name "Parkinson Institute Biobank"@en .
+

@@ -1,0 +1,34 @@
+@prefix ns1: <http://www.w3.org/ns/dcat#> .
+@prefix ns2: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<BASE_URI/fdp/dataset/71542-collection1> a ns1:Dataset ;
+    rdfs:label "Ring14 Clinical database"@en ;
+    ns4:hasVersion "1.0" ;
+    ns4:isPartOf <BASE_URI/fdp/catalog/registry> ;
+    ns4:issued "Tue Mar 24 16:54:52 GMT 2015"^^xsd:date ;
+    ns4:language <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    ns4:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.> ;
+    ns4:modified "Wed Feb 17 15:31:08 GMT 2016"^^xsd:date ;
+    ns4:publisher <BASE_URI/organization/71542> ;
+    ns4:title "Ring14 Clinical database"@en ;
+    ns2:metadataIdentifier <BASE_URI/fdp/registry/71542-collection1/metadataID> ;
+    ns2:metadataIssued "2017-03-16"^^xsd:date ;
+    ns2:metadataModified "2017-03-16"^^xsd:date ;
+    ns1:keyword "Ring14 Clinical database",
+        "registry" ;
+    ns1:landingPage <http://catalogue.rd-connect.eu/web/ring14-database/reg_home> ;
+    ns1:theme <http://dbpedia.org/resource/Disease_registry>,
+        <http://www.orpha.net/ORDO/Orphanet_1440> .
+
+<BASE_URI/fdp/registry/71542-collection1/metadataID> a <http://purl.org/spar/datacite/Identifier> ;
+    ns4:identifier "71542-collection1" .
+
+<BASE_URI/organization/71542> a ns3:Organization ;
+    ns3:name "Ring14 Clinical database"@en .
+
