@@ -1,0 +1,106 @@
+@prefix rr:     <http://www.w3.org/ns/r2rml#>.
+@prefix rml:    <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql:     <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dcterms:<http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix csvw : <http://www.w3.org/ns/csvw#> .
+@prefix crml: <http://semweb.mmlab.be/ns/rml/condition#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix obo: <http://purl.obolibrary.org/obo/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+
+#Ring14-biobank
+
+
+#-------------------------------SUBJECT MAPS---------------------------------------------------------------------------------
+
+<#ring14-biobank-resource-subjectmap> a rr:SubjectMap;
+	rr:class obo:OBI_0100051 . 
+
+<#ring14-patient-resource-subjectmap> a rr:SubjectMap;
+	rr:class <http://purl.obolibrary.org/obo/NCBITaxon_9606> .
+
+<#ring14-biobank-dataset-resource-subjectmap> a rr:SubjectMap;
+	rr:class dcat:Dataset .	
+
+<#ring14-biobank-id-resource-subjectmap> a rr:SubjectMap;
+        rr:class <http://rdf.biosemantics.org/ontologies/rd-connect/21f6df30_1f72_45fb_bfc1_2b3d1af1410a> .
+
+
+#-------------------------------PREDICATE MAPS---------------------------------------------------------------------------------
+
+<#ring14-biobank-resource-type-predicatemap> a rr:PredicateMap;
+	rr:constant rdf:type.
+
+<#ring14-biobank-resource-seealso-predicatemap> a rr:PredicateMap;
+	rr:constant  rdfs:seeAlso.
+
+<#ring14-biobank-resource-obtain-from-donar-predicatemap> a rr:PredicateMap;
+	rr:constant  <http://rdf.biosemantics.org/ontologies/rd-connect/e297332a_00a9_4ed0_b661_00dbd35aff95>.
+
+<#ring14-biobank-id-resource-id-predicatemap> a rr:PredicateMap;
+	rr:constant dcterms:identifier.
+
+<#ring14-biobank-id-resource-denotes-predicatemap> a rr:PredicateMap;
+	rr:constant <http://purl.obolibrary.org/obo/IAO_0000219>.
+
+#-------------------------------OBJECT MAPS---------------------------------------------------------------------------------
+
+<#ring14-biobank-resource-type-objectmap> a rr:ObjectMap;
+        rr:termType rr:IRI .
+
+<#ring14-biobank-resource-donar-objectmap> a rr:ObjectMap;
+	rr:parentTriplesMap <#ring14-patient-resource> .
+
+<#ring14-biobank-resource-dataset-objectmap> a rr:ObjectMap;
+	rr:parentTriplesMap <#ring14-biobank-dataset-resource> .
+
+<#ring14-biobank-id-resource-id-objectmap> a rr:ObjectMap;
+        rr:datatype xsd:string .
+
+<#ring14-biobank-id-resource-denotes-objectmap> a rr:ObjectMap;
+	rr:parentTriplesMap <#ring14-biobank-resource> .
+
+#-------------------------------PREDICATE OBJECT MAPS---------------------------------------------------------------------------------
+
+<#ring14-biobank-resource-type-predicate-object-map> a rr:PredicateObjectMap;
+	rr:predicateMap <#ring14-biobank-resource-type-predicatemap> ;
+        rr:objectMap <#ring14-biobank-resource-type-objectmap> .
+
+<#ring14-biobank-resource-obtain-from-donar-predicate-object-map> a rr:PredicateObjectMap;
+	rr:predicateMap <#ring14-biobank-resource-obtain-from-donar-predicatemap>; 
+        rr:objectMap <#ring14-biobank-resource-donar-objectmap> .
+
+<#ring14-biobank-resource-seealso-predicate-object-map> a rr:PredicateObjectMap;
+	rr:predicateMap <#ring14-biobank-resource-seealso-predicatemap>;
+	rr:objectMap <#ring14-biobank-resource-dataset-objectmap> .
+
+<#ring14-biobank-id-resource-id-predicate-object-map>  a rr:PredicateObjectMap;
+	rr:predicateMap <#ring14-biobank-id-resource-id-predicatemap>;
+        rr:objectMap <#ring14-biobank-id-resource-id-objectmap>.
+
+<#ring14-biobank-id-resource-denotes-predicate-object-map>  a rr:PredicateObjectMap;
+	rr:predicateMap <#ring14-biobank-id-resource-denotes-predicatemap>;
+        rr:objectMap <#ring14-biobank-id-resource-denotes-objectmap>.
+
+   
+#-------------------------------TRIPLE MAPS-------------------------------------------------------------------------------------------
+<#ring14-biobank-resource>
+    rr:subjectMap <#ring14-biobank-resource-subjectmap>; 
+    rr:predicateObjectMap <#ring14-biobank-resource-type-predicate-object-map>;
+    rr:predicateObjectMap <#ring14-biobank-resource-obtain-from-donar-predicate-object-map>;
+    rr:predicateObjectMap <#ring14-biobank-resource-seealso-predicate-object-map>.
+
+
+<#ring14-patient-resource>
+	rr:subjectMap <#ring14-patient-resource-subjectmap> .
+
+<#ring14-biobank-dataset-resource>
+	rr:subjectMap <#ring14-biobank-dataset-resource-subjectmap> .
+
+<#ring14-biobank-id-resource>
+    rr:subjectMap <#ring14-biobank-id-resource-subjectmap>;
+    rr:predicateObjectMap <#ring14-biobank-id-resource-id-predicate-object-map> ;
+    rr:predicateObjectMap <#ring14-biobank-id-resource-denotes-predicate-object-map> .
