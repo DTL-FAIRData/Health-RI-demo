@@ -31,7 +31,7 @@ To reset the demo enviroment
 * Close __google chrome's__ incognito window of the ``Demonstrator app`` and __reopen__ it in the new  incognito window
 
 ## BBMRI demo
-The scripts for the end to end demo is available in ``end-to-end`` dir. 
+The scripts for the bbmri demo is available in ``bbmri`` dir. 
 
 #### Start docker containers
 
