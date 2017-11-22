@@ -4,7 +4,7 @@ Demo environment setup for Health-RI 2017
 ## End to end demo
 The scripts for the end to end demo is available in ``end-to-end`` dir. 
 
-### Start docker containers
+#### Start docker containers
 * Go to <code>$cd end-to-end</code> 
 * Run <code>$docker-compose up</code>
 
@@ -23,7 +23,20 @@ The apps can be accessible via the links below
 
 ``NOTE:`` USE __incognito window__ of the google chrome when demonstrating ``Demonstrator app``    
 
-### Reset the enviroment
+#### Reset the enviroment
+To reset the demo enviroment
+* Go to <code>$cd end-to-end</code>
+* Run <code>$sh reset.sh</code>
+* Close the __google chrome's__ incognito window of the ``Demonstrator app`` and __reopen__ it in the new  incognito window
+
+## BBMRI demo
+The scripts for the end to end demo is available in ``end-to-end`` dir. 
+
+#### Start docker containers
+
+--TODO--
+
+#### Reset the enviroment
 To reset the demo enviroment
 * Go to <code>$cd end-to-end</code>
 * Run <code>$sh reset.sh</code>
