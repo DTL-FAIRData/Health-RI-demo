@@ -8,7 +8,8 @@ The scripts for the end to end demo is available in ``end-to-end`` dir.
 * Go to <code>$cd end-to-end</code> 
 * Run <code>$docker-compose up</code>
 
-``NOTE:`` Starting up all the require docker containers will take some time. __Please wait__ until the container starting process is __done__ then execute the following steps.
+``WARNING:`` Starting up all the require docker containers will take some time. __Please wait__ until the container starting process is __done__ then execute the following steps.
+
 * Run <code>$sh reset.sh</code>. This script will ``create``  fdp repository in the __agraph__ and test namespace in the blazegraph
 
 
@@ -27,7 +28,7 @@ The apps can be accessible via the links below
 To reset the demo enviroment
 * Go to <code>$cd end-to-end</code>
 * Run <code>$sh reset.sh</code>
-* Close the __google chrome's__ incognito window of the ``Demonstrator app`` and __reopen__ it in the new  incognito window
+* Close __google chrome's__ incognito window of the ``Demonstrator app`` and __reopen__ it in the new  incognito window
 
 ## BBMRI demo
 The scripts for the end to end demo is available in ``end-to-end`` dir. 
@@ -40,4 +41,4 @@ The scripts for the end to end demo is available in ``end-to-end`` dir.
 To reset the demo enviroment
 * Go to <code>$cd bbmri</code>
 * Run <code>$sh reset.sh</code>
-* Close the __google chrome's__ incognito window of the ``Demonstrator app`` and __reopen__ it in the new  incognito window
+* Close __google chrome's__ incognito window of the ``Demonstrator app`` and __reopen__ it in the new  incognito window
