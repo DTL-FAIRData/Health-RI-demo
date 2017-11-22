@@ -38,6 +38,6 @@ The scripts for the end to end demo is available in ``end-to-end`` dir.
 
 #### Reset the enviroment
 To reset the demo enviroment
-* Go to <code>$cd end-to-end</code>
+* Go to <code>$cd bbmri</code>
 * Run <code>$sh reset.sh</code>
 * Close the __google chrome's__ incognito window of the ``Demonstrator app`` and __reopen__ it in the new  incognito window
