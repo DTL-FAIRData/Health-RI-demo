@@ -14,9 +14,10 @@ services:
 
   # FDP for the fairfier 
   fdp-fairfier:
-    image: dtlfair/fdp:latest
-    ports:
-      - "8502:8080"
+    image: dtlfair/fdp:healthRiAgraph
+    #ports:
+    #  - "8502:8080"
+    network_mode: "host"
 
   # Create simple server to host rdf files required by demonstrator
   simple-server:
@@ -36,6 +37,13 @@ services:
     image: dtlfair/fair-data-demo:healthRI2017
     ports:
       - "8505:80"
+
+  # agraph 
+  agraph:
+    image: franzinc/agraph:v6.1.1
+    #ports:
+    #  - "8506:10035"
+    network_mode: "host"  
 
   # Script for pre populatingfdp with idcards metadata
   idcard-prepopu-script:
