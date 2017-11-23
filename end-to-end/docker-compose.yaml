@@ -64,8 +64,7 @@ services:
     depends_on:
       - "fdp-reg"
       - "fdp-biobank"
-    networks:
-      - demo-net
+    network_mode: host
 
   cors-proxy:
     image: imjacobclark/cors-container
