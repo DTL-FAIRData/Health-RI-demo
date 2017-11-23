@@ -5,50 +5,75 @@ services:
     image: dtlfair/fdp:latest
     ports:
       - "8500:8080"
+    networks:
+      - demo-net
 
   # FDP for biobank 
   fdp-biobank:
     image: dtlfair/fdp:latest
     ports:
       - "8501:8080"
+    networks:
+      - demo-net
 
   # FDP for the fairfier 
   fdp-fairfier:
     image: dtlfair/fdp:healthRiAgraph
-    #ports:
-    #  - "8502:8080"
-    network_mode: "host"
+    ports:
+      - "8502:8502"
+    depends_on:
+      - agraph
+    networks:
+      - demo-net
 
   # Create simple server to host rdf files required by demonstrator
   simple-server:
     build: ./simple-server
     ports:
       - "8503:80"
+    networks:
+      - demo-net
 
   # Blazegraph for the demonstrator
   blazegraph:
     image: rajireturn/blazegraph
-#    ports:
-#      - "8504:8080"
-    network_mode: "host"
+    ports:
+      - "8080:8080"
+    networks:
+      - demo-net
 
   # demonstrator 
   demo-app:
     image: dtlfair/fair-data-demo:healthRI2017
     ports:
       - "8505:80"
+    networks:
+      - demo-net
 
   # agraph 
   agraph:
     image: franzinc/agraph:v6.1.1
-    #ports:
-    #  - "8506:10035"
-    network_mode: "host"  
+    ports:
+     - "10035:10035"
+    networks:
+      - demo-net
 
   # Script for pre populatingfdp with idcards metadata
   idcard-prepopu-script:
     build : ./idcard-prepopulate-script
     depends_on:
-      - fdp-reg
-      - fdp-biobank
-    network_mode: "host"
+      - "fdp-reg"
+      - "fdp-biobank"
+    networks:
+      - demo-net
+
+  cors-proxy:
+    image: imjacobclark/cors-container
+    ports:
+      - "3000:3000"
+    networks:
+      - demo-net
+
+networks:
+  demo-net:
+    driver: bridge
