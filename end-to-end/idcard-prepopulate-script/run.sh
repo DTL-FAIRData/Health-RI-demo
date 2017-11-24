@@ -1,5 +1,5 @@
-printf "============== Running reset script to init demo env =============="
-sh reset.sh
+#printf "============== Running reset script to init demo env =============="
+#sh reset.sh
 
 cd script/src
 biobankfdpURL="http://localhost:8501/fdp"
