@@ -50,6 +50,17 @@ services:
     networks:
       - demo-net
 
+  # search
+  fdp-search:
+    image: dtlfair/fdp:latest
+    environment:
+     - LOAD_EXAMPLE_DATA=true
+     - ES_URL=http://127.0.0.1:8080/fse/rs/
+    ports:
+     - "80:80"
+     - "8080:8080"
+
+
   # agraph 
   agraph:
     image: franzinc/agraph:v6.1.1
