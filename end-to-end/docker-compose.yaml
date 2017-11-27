@@ -1,3 +1,4 @@
+
 version: "3.0"
 services:
   # FDP for patient registry
@@ -38,7 +39,7 @@ services:
   blazegraph:
     image: rajireturn/blazegraph
     ports:
-      - "8080:8080"
+      - "8504:8080"
     networks:
       - demo-net
 
@@ -58,7 +59,7 @@ services:
      - ES_URL=http://127.0.0.1:8080/fse/rs/
     ports:
      - "80:80"
-     - "8080:8080"
+     - "8506:8080"
 
 
   # agraph 
@@ -69,6 +70,24 @@ services:
     networks:
       - demo-net
 
+  #fairfier
+  fairifier:
+     image: dtlfair/fairifier:latest
+     ports: 
+       - "8502:3333"
+     networks:
+       - demo-net
+
+  #virtuoso
+  virtuoso:
+     image: tenforce/virtuoso:latest
+     ports:
+       - "8508:8890"
+     environment:
+       - DBA_PASSWORD=dba
+     networks:
+       - demo-net
+
   # Script for pre populatingfdp with idcards metadata
   idcard-prepopu-script:
     build : ./idcard-prepopulate-script
@@ -76,13 +95,6 @@ services:
       - "fdp-reg"
       - "fdp-biobank"
     network_mode: host
-
-  cors-proxy:
-    image: imjacobclark/cors-container
-    ports:
-      - "3000:3000"
-    networks:
-      - demo-net
 
 networks:
   demo-net:
