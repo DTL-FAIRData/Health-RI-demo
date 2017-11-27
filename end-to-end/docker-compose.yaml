@@ -56,9 +56,9 @@ services:
     image: dtlfair/fdp:latest
     environment:
      - LOAD_EXAMPLE_DATA=true
-     - ES_URL=http://127.0.0.1:8080/fse/rs/
+     - ES_URL=http://127.0.0.1:8506/fse/rs/
     ports:
-     - "80:80"
+     - "8507:80"
      - "8506:8080"
 
 
