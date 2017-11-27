@@ -39,7 +39,7 @@ services:
   blazegraph:
     image: rajireturn/blazegraph
     ports:
-      - "8504:8080"
+      - "8504:8504"
     networks:
       - demo-net
 
