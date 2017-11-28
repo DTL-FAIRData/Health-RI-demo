@@ -74,7 +74,7 @@ services:
   fairifier:
      image: dtlfair/fairifier:latest
      ports: 
-       - "8502:3333"
+       - "8510:3333"
      networks:
        - demo-net
 
