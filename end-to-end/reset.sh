@@ -1,7 +1,7 @@
 #!/bin/sh
 printf "\n------------This reset script will remove the chrome's localhost cookie, delete and recreate test namespace in the blazegraph------------"
 bGraphNamespace="test"
-bGraphURL="http://localhost:8080/blazegraph/namespace"
+bGraphURL="http://localhost:8504/blazegraph/namespace"
 aGraphRepo="fdp"
 aGraphUrl="http://localhost:10035"
 gcCookies="localhost"

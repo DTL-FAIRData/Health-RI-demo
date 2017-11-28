@@ -1,4 +1,3 @@
-
 version: "3.0"
 services:
   # FDP for patient registry
@@ -24,8 +23,12 @@ services:
       - "8502:8502"
     depends_on:
       - agraph
-    network_mode: host
-    
+
+    networks:
+      - demo-net
+    extra_hosts:
+      - "localhost:"
+
   # Create simple server to host rdf files required by demonstrator
   simple-server:
     build: ./simple-server
@@ -41,6 +44,8 @@ services:
       - "8504:8504"
     networks:
       - demo-net
+    extra_hosts:
+      - "localhost:"
 
   # demonstrator 
   demo-app:
@@ -49,17 +54,20 @@ services:
       - "8505:80"
     networks:
       - demo-net
+    extra_hosts:
+      - "localhost:"
 
   # search
   fdp-search:
     image: dtlfair/fdp:latest
     environment:
-     - LOAD_EXAMPLE_DATA=true
-     - ES_URL=http://127.0.0.1:8506/fse/rs/
+   #   - LOAD_EXAMPLE_DATA=true
+      - ES_URL=http://127.0.0.1:8506/fse/rs/
     ports:
-     - "8507:80"
-     - "8506:8080"
-
+      - "8507:80"
+      - "8506:8080"
+    extra_hosts:
+      - "localhost:"
 
   # agraph 
   agraph:
@@ -71,14 +79,14 @@ services:
 
   #fairfier
   fairifier:
-     image: dtlfair/fairifier:latest
-     ports: 
-       - "8509:3333"
-     depends_on:
-      - fdp-fairfier
-      - virtuoso
-     networks:
-       - demo-net
+
+    image: dtlfair/fairifier:latest
+    ports: 
+      - "8510:3333"
+    networks:
+      - demo-net
+    extra_hosts:
+      - "localhost:"
 
   #virtuoso
   virtuoso:
@@ -96,7 +104,10 @@ services:
     depends_on:
       - "fdp-reg"
       - "fdp-biobank"
-    network_mode: host
+    networks:
+      - demo-net
+    extra_hosts:
+      - "localhost:"
 
 networks:
   demo-net:
