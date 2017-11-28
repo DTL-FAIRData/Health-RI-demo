@@ -24,9 +24,8 @@ services:
       - "8502:8502"
     depends_on:
       - agraph
-    networks:
-      - demo-net
-
+    network_mode: host
+    
   # Create simple server to host rdf files required by demonstrator
   simple-server:
     build: ./simple-server
@@ -74,7 +73,10 @@ services:
   fairifier:
      image: dtlfair/fairifier:latest
      ports: 
-       - "8502:3333"
+       - "8509:3333"
+     depends_on:
+      - fdp-fairfier
+      - virtuoso
      networks:
        - demo-net
 
