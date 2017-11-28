@@ -13,3 +13,8 @@ curl -X GET --header 'Accept: */*' 'https://localhost:8506/fse/submitFdp?fdp=$bi
 printf "============== POSTING Idcard's registry metadata =============="
 python3 idcard.py registry $registryfdpURL $simpleServerURL
 curl -X GET --header 'Accept: */*' 'https://localhost:8506/fse/submitFdp?fdp=$registryfdpURL'
+
+printf "============== Setup triplestores ==========================="
+
+cd /usr/src/app
+sh reset.sh
