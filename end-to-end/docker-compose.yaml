@@ -40,9 +40,9 @@ services:
     image: rajireturn/blazegraph
     ports:
       - "8504:8504"
-    networks:
-      - demo-net
-
+    #networks:
+    #  - demo-net
+    network_mode: host
   # demonstrator 
   demo-app:
     image: dtlfair/fair-data-demo:healthRI2017
