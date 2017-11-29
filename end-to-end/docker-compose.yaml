@@ -26,7 +26,7 @@ services:
   simple-server:
     build: ./simple-server
     ports:
-      - "8503:80"
+      - "8503:8080"
 
   # Blazegraph for the demonstrator
   blazegraph:
