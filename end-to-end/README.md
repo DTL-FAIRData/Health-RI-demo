@@ -7,7 +7,7 @@ If it is your first time running the end-to-end setup, create the docker network
 - run `docker-compose up --no-start`
 
 When the network is created, do the next steps:
-- run `docker network inspect endtoend_demo-net | grep Gateway` and copy the IP address
+- run `docker network inspect endtoend_default | grep Gateway` and copy the IP address
 - enter that IP address for each `extra_hosts` `localhost` mapping in the `docker-compose.yaml` file
 
 JFM oneliner for OSX:
