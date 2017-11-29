@@ -64,7 +64,7 @@ services:
 
   #fairfier
   fairifier:
-    image: dtlfair/fairifier:latest
+    image: dtlfair/fairifier:demo
     ports: 
       - "8510:3333"
     extra_hosts:
