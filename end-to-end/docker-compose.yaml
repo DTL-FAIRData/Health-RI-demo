@@ -53,7 +53,7 @@ services:
 
   # search
   fdp-search:
-    image: dtlfair/fdp:latest
+    image: dtlfair/search:latest
     environment:
   #   - LOAD_EXAMPLE_DATA=true
      - ES_URL=http://127.0.0.1:8506/fse/rs/
