@@ -49,7 +49,7 @@ services:
     image: dtlfair/search:latest
     environment:
    #   - LOAD_EXAMPLE_DATA=true
-      - ES_URL=http://127.0.0.1:8506/fse/rs/
+      - ES_URL=http://localhost:8506/fse/rs/
     ports:
       - "8507:80"
       - "8506:8080"
