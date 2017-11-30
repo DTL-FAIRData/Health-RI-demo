@@ -1,20 +1,16 @@
-version: "3.0"
+version: "3.4"
 services:
   # FDP for patient registry
   fdp-reg:
     image: dtlfair/fdp:latest
     ports:
       - "8500:8080"
-    networks:
-      - demo-net
 
   # FDP for biobank 
   fdp-biobank:
     image: dtlfair/fdp:latest
     ports:
       - "8501:8080"
-    networks:
-      - demo-net
 
   # FDP for the fairfier 
   fdp-fairfier:
@@ -23,70 +19,58 @@ services:
       - "8502:8502"
     depends_on:
       - agraph
-
     networks:
       - demo-net
     extra_hosts:
-      - "localhost:"
+      - "localhost:127.0.0.1"
 
   # Create simple server to host rdf files required by demonstrator
   simple-server:
     build: ./simple-server
     ports:
-      - "8503:80"
-    networks:
-      - demo-net
+      - "8503:8080"
 
   # Blazegraph for the demonstrator
   blazegraph:
     image: rajireturn/blazegraph
     ports:
       - "8504:8504"
-    networks:
-      - demo-net
     extra_hosts:
-      - "localhost:"
+      - "localhost:127.0.0.1"
 
   # demonstrator 
   demo-app:
     image: dtlfair/fair-data-demo:healthRI2017
     ports:
       - "8505:80"
-    networks:
-      - demo-net
     extra_hosts:
-      - "localhost:"
+      - "localhost:127.0.0.1"
 
   # search
   fdp-search:
-    image: dtlfair/fdp:latest
+    image: dtlfair/search:latest
     environment:
    #   - LOAD_EXAMPLE_DATA=true
-      - ES_URL=http://127.0.0.1:8506/fse/rs/
+      - ES_URL=http://localhost:8506/fse/rs/
     ports:
       - "8507:80"
       - "8506:8080"
     extra_hosts:
-      - "localhost:"
+      - "localhost:127.0.0.1"
 
   # agraph 
   agraph:
     image: franzinc/agraph:v6.1.1
     ports:
      - "10035:10035"
-    networks:
-      - demo-net
 
   #fairfier
   fairifier:
-
-    image: dtlfair/fairifier:latest
+    image: dtlfair/fairifier:demo
     ports: 
       - "8510:3333"
-    networks:
-      - demo-net
     extra_hosts:
-      - "localhost:"
+      - "localhost:127.0.0.1"
 
   #virtuoso
   virtuoso:
@@ -95,8 +79,6 @@ services:
        - "8508:8890"
      environment:
        - DBA_PASSWORD=dba
-     networks:
-       - demo-net
 
   # Script for pre populatingfdp with idcards metadata
   idcard-prepopu-script:
@@ -104,11 +86,5 @@ services:
     depends_on:
       - "fdp-reg"
       - "fdp-biobank"
-    networks:
-      - demo-net
     extra_hosts:
-      - "localhost:"
-
-networks:
-  demo-net:
-    driver: bridge
+      - "localhost:127.0.0.1"

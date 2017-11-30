@@ -8,8 +8,13 @@ simpleServerURL="http://localhost:8503/"
 
 printf "============== POSTING Idcard's biobank metadata =============="
 python3 idcard.py biobank $biobankfdpURL $simpleServerURL  
-curl -X GET --header 'Accept: */*' 'https://localhost:8506/fse/submitFdp?fdp=$biobankfdpURL'
+curl -X GET --header 'Accept: */*' 'http://localhost:8506/fse/submitFdp?fdp=$biobankfdpURL'
 
 printf "============== POSTING Idcard's registry metadata =============="
 python3 idcard.py registry $registryfdpURL $simpleServerURL
-curl -X GET --header 'Accept: */*' 'https://localhost:8506/fse/submitFdp?fdp=$registryfdpURL'
+curl -X GET --header 'Accept: */*' 'http://localhost:8506/fse/submitFdp?fdp=$registryfdpURL'
+
+printf "============== Setup triplestores ==========================="
+
+cd /usr/src/app
+sh reset.sh

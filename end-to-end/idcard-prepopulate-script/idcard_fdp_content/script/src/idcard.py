@@ -4,6 +4,7 @@ import json
 import requests
 import os
 import sys
+import time
 
 
 class IDCard:
@@ -13,6 +14,8 @@ class IDCard:
     FDP_URI_PH = BASE_URI_PH + "/fdp"
     SIMPLE_SERVER_URI_PH = "SIMPLE_SERVER"
     DIR_NAME = "../../fdp-metadata/id-card"
+    MAX_RE_TRY = 6
+    RE_TRY = 0
 
 
     def store_metadata(self, m_type, fdp_url, simple_server_url):
@@ -57,9 +60,19 @@ class IDCard:
                 self.post_metadata((post_uri  + file_name), file_content)
 
     def post_metadata(self, post_uri, content):
-        headers = {'content-type': 'text/turtle'}
-        r = requests.post(post_uri, data=content.encode('utf8') , headers=headers)
-        print(r.headers)
+        try:
+            headers = {'content-type': 'text/turtle'}
+            r = requests.post(post_uri, data=content.encode('utf8') , headers=headers)
+            self.RE_TRY = 0
+            print(r.headers)
+        except:
+            print("Error making POST call the script will redo the call after 30sec")
+            print("No of max retry available : ", str(self.MAX_RE_TRY - self.RE_TRY))
+            time.sleep(30)
+            if (self.RE_TRY <= self.MAX_RE_TRY):
+                self.RE_TRY = self.RE_TRY + 1
+                print("Retry number : ", str(self.RE_TRY))
+                self.post_metadata(post_uri, content)
 
 
 test = IDCard()
