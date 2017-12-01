@@ -1,0 +1,13 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix fdp: <http://rdf.biosemantics.org/ontologies/fdp-o#>.
+@prefix datacite: <http://purl.org/spar/datacite/>.
+
+<> dct:title "Catalogue collections mappings dataset";
+    dct:hasVersion "1.0";
+    dct:isPartOf <CATALOG_URI>;
+    dcat:theme <http://rdfs.org/ns/void#Linkset>, <http://www.wikidata.org/entity/Q2352616>, <http://www.wikidata.org/entity/Q180160>, <http://semanticscience.org/resource/SIO_000756>;
+    dcat:keyword "mappings", "catalogue mappings".

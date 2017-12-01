@@ -1,5 +1,9 @@
 FROM python:3
 
+RUN apt-get update
+
+RUN apt-get -y install nano
+
 WORKDIR /usr/src/app
 COPY idcard_fdp_content/ ./
 COPY run.sh ./

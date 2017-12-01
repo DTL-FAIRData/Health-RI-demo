@@ -1,0 +1,8 @@
+SELECT ?s {
+
+	VALUES(?graph) {(<#url#>)}
+  
+	GRAPH ?graph {
+		?s ?p ?o   
+	}
+} limit 1

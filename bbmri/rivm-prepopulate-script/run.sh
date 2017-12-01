@@ -3,7 +3,17 @@
 
 cd script/src
 rivmfdpURL="http://localhost:8500/fdp"
-simpleServerURL="http://localhost:8503/demo-content/rivm-sources.ttl"
+mappingsfdpURL="http://localhost:8501/fdp"
+simpleServerURL="http://localhost:8503"
 
 printf "============== POSTING RIVM metadata =============="
-python3 run.py $rivmfdpURL $simpleServerURL  
+python3 run.py $rivmfdpURL $simpleServerURL
+
+printf "============== POSTING RIVM metadata =============="
+python3 run.py rivm $rivmfdpURL $simpleServerURL
+
+printf "============== POSTING Mappings metadata =============="
+python3 run.py mapping $mappingsfdpURL $simpleServerURL
+
+cd /usr/src/app
+sh reset.sh

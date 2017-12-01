@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="demo" ng-strict-di>
+    <head>    
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="description" content="FAIR data demonstrator">
+	    <meta name="author" content="Kees Burger">
+	    <meta name="author" content="Rajaram Kaliyaperumal">
+	    <link rel='shortcut icon' href='images/dtl-tab-icon.png' type='image/x-icon'/>
+        <!-- inject:css -->
+        <link rel="stylesheet" href="vendor.css">
+        <link rel="stylesheet" href="demo.css">
+        <!-- endinject -->
+    </head>
+    <body>
+	    <!-- Navigation -->
+	    <nav id="header" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	        <div class="container">
+	            <!-- Brand and toggle get grouped for better mobile display -->
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a class="navbar-brand" href="http://www.dtls.nl/" target="_blank">
+	                    <img src="images/logo-dtl.png" alt="" class="img-thumbnail" width="154" height="136">
+	                </a>
+	            </div>
+	            <!-- Collect the nav links, forms, and other content for toggling -->
+	            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+	                <a class="navbar-brand" href="https://dtl-fair.atlassian.net/wiki/display/FDP/FAIR+Data+Point+Software+Specification" target="_blank">
+	                    <img src="images/logo-fdp.png" alt="" class="img-thumbnail" width="120" height="140">
+	                </a>
+	                <ul class="nav navbar-nav"> 
+	                	<li>
+	                        <a href="#!/">Home</a>
+	                    </li>                   
+	                    <li>
+	                        <a href="#!/about">About</a>
+	                    </li>
+	                    <li>	                    
+	                        <a href="#!/cache">Cache</a>
+	                    </li>
+	                    <li>	                    
+	                        <a href="#!/stats">Stats</a>
+	                    </li>
+	                </ul>
+	            </div>
+	            <!-- /.navbar-collapse -->
+	        </div>
+	        <!-- /.container -->
+	    </nav>
+    
+    
+    
+    
+        <div class="container">
+        <div ng-view>
+            </div>
+        </div>
+        
+        <!-- inject:js -->
+        <script src="vendor.js"></script>
+        <script src="demo.js"></script>
+        <!-- endinject -->        
+        
+        <div id="footer">      
+	      <div class="container">
+	        <p class="muted credit">Supporting projects :-
+	              <a target="_blank" href="http://rd-connect.eu/">RD-CONNECT</a>               
+	              --
+	              <a target="_blank" href="https://www.elixir-europe.org/">
+	                  ELIXIR</a> 
+	              --
+	              <a target="_blank" href="https://www.bbmri.nl/">
+	                  BBMRI-NL</a>        
+	        </p>
+	      </div>
+	    </div>  	        
+    </body>
+</html>

@@ -1,0 +1,14 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix fdp: <http://rdf.biosemantics.org/ontologies/fdp-o#>.
+@prefix datacite: <http://purl.org/spar/datacite/>.
+
+<> rdf:type dcat:Distribution;
+    dct:title "Catalogue collections mappings dataset turtle distribution";
+    dct:license <http://purl.org/NET/rdflicense/ukogl3.0>;
+    dct:isPartOf <DATASET_URI>;
+    dct:hasVersion "1.0";
+    dcat:downloadURL <SIMPLE_SERVER/demo-content/rivm-2-bbmriNL-lset.ttl>;
+    dcat:mediaType "text/turtle".

@@ -1,0 +1,31 @@
+{
+  "templateQueries": [    
+    {
+      "text": "LIST number of collections per data provider",
+      "variables": [
+        "collection"
+      ],
+      "queryFileName": "template11.sparql"
+    },
+    {
+      "text": "GET collection entries matches given textual description",
+      "variables": [
+        "plainText"
+      ],
+      "queryFileName": "template12.sparql"
+    },
+    {
+      "text": "GET number of overlapping collections between data provider",
+      "variables": [
+        "collection"
+      ],
+      "queryFileName": "template13.sparql"
+    }
+  ],
+  "variables": {   
+    "collection": {
+      "queryFileName": "getCollections.sparql",
+      "fileUrl": "http://localhost:8503/demo-content/labels.ttl"
+    }
+  }
+}

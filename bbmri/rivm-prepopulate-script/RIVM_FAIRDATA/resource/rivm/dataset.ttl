@@ -1,0 +1,21 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix fdp: <http://rdf.biosemantics.org/ontologies/fdp-o#>.
+@prefix datacite: <http://purl.org/spar/datacite/>.
+
+<> rdf:type dcat:Dataset;
+    dct:title "Sources of health care data";
+    dct:hasVersion "1.0";
+    dct:isPartOf <CATALOG_URI>;
+    dct:publisher <http://www.rivm.nl/>;
+    dct:description "This dataset contains metadata information about different health care data.";
+    dct:language <http://id.loc.gov/vocabulary/iso639-1/en>;
+    dct:license <http://purl.org/NET/rdflicense/ukogl3.0>;
+    dct:rights <http://www.rivm.nl/>;
+    dcat:theme <http://www.wikidata.org/entity/Q31207>, <http://www.wikidata.org/entity/Q2352616>, <http://www.wikidata.org/entity/Q180160>, <http://semanticscience.org/resource/SIO_000756>;
+    dcat:keyword "sources", "health records", "patient record", "surveys", "metadata".
+<http://www.rivm.nl/> rdf:type foaf:Organization;
+    foaf:name "National Institute for Public Healthe and the Enviroment. Minsty of Health, Welfare and Sport".

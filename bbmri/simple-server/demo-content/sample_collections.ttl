@@ -1,0 +1,782 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix orcid: <http://orcid.org/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix fdpo: <http://rdf.biosemantics.org/ontologies/fdp-o#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix r3d: <http://www.re3data.org/schema/3-0#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix iso639: <http://id.loc.gov/vocabulary/iso639-1/> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+@prefix bbmri: <http://catalogue.bbmri.nl/> .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/3> a sio:SIO_000616 ;
+	dct:description "Prospective cohort" ;
+	dct:title "POPS" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/4> a sio:SIO_000616 ;
+	dct:description "MRI available" ;
+	dct:title "BIG (Brain Imaging Genetics)" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/5> a sio:SIO_000616 ;
+	dct:description "Prospective cohort, family-based" ;
+	dct:title "HEBON" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/6> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "EPOZ" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/7> a sio:SIO_000616 ;
+	dct:description "Most samples are from child-parent trios - 6,860 families (3,747 birth defects, 905 childhood cancers, and 2,208 population-based controls)." ;
+	dct:title "AGORA" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/8> a sio:SIO_000616 ;
+	dct:description "NT and HT individuals, 24-hour BP, hormonal status, IMT, PWV, etc" ;
+	dct:title "Hippocrates" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/9> a sio:SIO_000616 ;
+	dct:description "http://www.nijmegenbiomedischestudie.nl" ;
+	dct:title "Nijmegen Biomedische Studie" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/10> a sio:SIO_000616 ;
+	dct:description "Population based cohort, baseline 1987-1991, follow-up every five years. Fifth round ongoing (2008-2012). Lifestyle, risk factors and diseases: cardiovascular, diabetes, COPD, cancer, musculoskeletal" ;
+	dct:title "Doetinchem Cohort Study" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/11> a sio:SIO_000616 ;
+	dct:description "Prospective cohort" ;
+	dct:title "LRGP" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/12> a sio:SIO_000616 ;
+	dct:description "Prospective cohort, follow up cancer, CVD, type 2 diabetes, mortality" ;
+	dct:title "EPIC-NL" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/13> a sio:SIO_000616 ;
+	dct:description "Final target n=165.000. Trio design (http://www.lifelines.nl/lifelines-research/study-design-and-organisation/study-design); Chronic diseases. Overview of collected data: http://www.lifelines.nl/upload/file/Research/overview+measurements+lifelines+2012.pdf." ;
+	dct:title "LifeLines" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/14> a sio:SIO_000616 ;
+	dct:description "studie naar rol omgevingsfactoren op ontstaan COPD" ;
+	dct:title "Vla-Vla" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/15> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "Doetichem cohort" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/16> a sio:SIO_000616 ;
+	dct:description "400 nuclear families with 2 children. Study is focussed on family processes, for instance (substance-use-specific) parenting, in relation to various health-related behaviours in adolescence, like smoking, alcohol use, and eating behaviour" ;
+	dct:title "Family and Health" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/17> a sio:SIO_000616 ;
+	dct:description "Prospective cohort; focus on renal and cardiovascular disease. 8592 subjects measured at baseline and during 5 follow-up screening rounds." ;
+	dct:title "Prevention of Renal and Vascular End-stage Disease" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/18> a sio:SIO_000616 ;
+	dct:description "Prospective cohort. Since 2001, and starting at age 11. Representative for general population See: www.trails.nl." ;
+	dct:title "TRacking Adolescents' Individual Lives Survey - Population sample" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/19> a sio:SIO_000616 ;
+	dct:description "focus on obesity; children being followed from birth to adulthood (DNA isolation is ongoing)" ;
+	dct:title "GECKO" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/20> a sio:SIO_000616 ;
+	dct:description "wordt gewerkt aan extra 1000" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/21> a sio:SIO_000616 ;
+	dct:description "Unselected ; population-based ; 45+ ; cancer, cardiovascular, neurological, psychiatric, endocrine, locomotor , ophthalmological , otolarynchological , genetic , hepatic , pulmonary , dermatological , disorders" ;
+	dct:title "ERGO, Rotterdam study: population-based; outbred" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/22> a sio:SIO_000616 ;
+	dct:description "Unselected population based study; birth cohort (gwas) and parrents" ;
+	dct:title "Generation R" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/23> a sio:SIO_000616 ;
+	dct:description "unselected, population-based, family study; GWA: 2800 random en 500 patient series - pcos, preeclampsia, IUGR, glaucoma, Alzheimer, Parkinson, stroke" ;
+	dct:title "Erasmus Rucphen Family study (ERF) and patient cohorts: family-based" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/24> a sio:SIO_000616 ;
+	dct:description "Population based" ;
+	dct:title "Ghana" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/26> a sio:SIO_000616 ;
+	dct:description "120 trio's" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/27> a sio:SIO_000616 ;
+	dct:description "Familybased, 450 independent cases" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/29> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "PANDA" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/30> a sio:SIO_000616 ;
+	dct:description "Moeders (tijdens zwangerschap): geen DNA, kinderen: filtreerpapiertjes waar DNA uitgehaald kan worden." ;
+	dct:title "ABCD" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/31> a sio:SIO_000616 ;
+	dct:description "Data available on cognitive functioning, intelligence, personality traits, various psychiatric behaviors as well as potential environmental moderators" ;
+	dct:title "NESCOG" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/32> a sio:SIO_000616 ;
+	dct:description "biopten en weefsel als vriesmateriaal en in paraffine" ;
+	dct:title "Centrale Biobank (CBB) UMC Utrecht" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/33> a sio:SIO_000616 ;
+	dct:description "Prospective cohort" ;
+	dct:title "Leiden 85+" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/34> a sio:SIO_000616 ;
+	dct:description "Biomarkers" ;
+	dct:title "Leiden Longevity Study" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/35> a sio:SIO_000616 ;
+	dct:description "3 cohorten, 55+, longitudinaal, Exoom chip in eerste cohort." ;
+	dct:title "Longitudinal Aging Study Amsterdam" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/36> a sio:SIO_000616 ;
+	dct:description "Alle 4000 in Nijmegen opgeslagen" ;
+	dct:title "EUGENDA" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/37> a sio:SIO_000616 ;
+	dct:description """bloed DNA: leeftijd 4 en 8 en 16
+Wanglsijmvlies DNA: leeftijd 8
+Neus epihteel DNA: leeftijd 16""" ;
+	dct:title "PIAMA" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/38> a sio:SIO_000616 ;
+	dct:description "birth cohort, extensive environmental measures; 1600 trio's" ;
+	dct:title "KOALA" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/39> a sio:SIO_000616 ;
+	dct:description "birth cohort, extensive environmental measures" ;
+	dct:title "Prevasc" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/40> a sio:SIO_000616 ;
+	dct:description "100 asthmatics followed from childhood over 30 years, 280 asthma patients with follow up >30 years from which 200 families with proband with asthma (n=1259), 200 unrelated asthma, asthma trios (n=405), Rhinitis trios (n=226), untreated asthma and controls (n=150), 200 asthmapatients with airway biopsies, followed over >5 years), 75 families with two children with asthma." ;
+	dct:title "UMCG COPD" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/42> a sio:SIO_000616 ;
+	dct:description "Familybased, no. of independent cases 230" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/43> a sio:SIO_000616 ;
+	dct:description "birth cohort, extensive environmental measures" ;
+	dct:title "KNOOPSGAT" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/44> a sio:SIO_000616 ;
+	dct:description "birth cohort, extensive environmental measures, including neonatal lung function and cardiovasc parameters. See http://www.umcutrecht.nl/nl/Subsites/Whistler/Home" ;
+	dct:title "WHeezing Illnesses STudy LEidsche Rijn" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/45> a sio:SIO_000616 ;
+	dct:description "occupational asthma with environmental exposure measures" ;
+	dct:title "Occupational asthma" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/47> a sio:SIO_000616 ;
+	dct:description "RNA van ongeveer 1000 personen" ;
+	dct:title "NELSON" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/48> a sio:SIO_000616 ;
+	dct:description "Treated children with asthma (4-12yr), lung function measurements, eNO, questionnaire data, pharmacy data. Verwacht aantal eind 2010: 1000" ;
+	dct:title "PACMAN cohort" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/49> a sio:SIO_000616 ;
+	dct:description "Patient based" ;
+	dct:title "ORIGO" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/50> a sio:SIO_000616 ;
+	dct:description "Extensively phenotyped" ;
+	dct:title "Polygene" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/51> a sio:SIO_000616 ;
+	dct:description "also 800g pellet, serum, cryomaterial" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/52> a sio:SIO_000616 ;
+	dct:description "Extensively phenotyped, < = 50 years at diagnosis" ;
+	dct:title "Breast Cancer Outcome Of Mutation carriers" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/53> a sio:SIO_000616 ;
+	dct:description "Tumor expression arrays run on all cases" ;
+	dct:title "MINDACT" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/54> a sio:SIO_000616 ;
+	dct:description "RNA n=800. Nationally coordinated assessment of randomized clinical trials" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/55> a sio:SIO_000616 ;
+	dct:description "N=100 Normal + Tumor tissue, extensively phenotyped" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/56> a sio:SIO_000616 ;
+	dct:description "Malign + benign tumors" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/57> a sio:SIO_000616 ;
+	dct:description "Extensively phenotyped" ;
+	dct:title "Polygene" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/58> a sio:SIO_000616 ;
+	dct:description "Genetic population isolate" ;
+	dct:title "SABA" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/59> a sio:SIO_000616 ;
+	dct:description "Familal melanoma" ;
+	dct:title "GenoMEL,  RO-1" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/60> a sio:SIO_000616 ;
+	dct:description "Extensively phenotyped" ;
+	dct:title "Polygene" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/61> a sio:SIO_000616 ;
+	dct:description "extensively phenotyped" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/62> a sio:SIO_000616 ;
+	dct:description "Also 300 controls without skin cancer and 100 melanoma patients" ;
+	dct:title "LSS" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/63> a sio:SIO_000616 ;
+	dct:description "n=1000 (serum, DNA of eyebrow hairs). Organ transplant recipients." ;
+	dct:title "EPI-HPV" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/64> a sio:SIO_000616 ;
+	dct:description "N=100 Normal + Tumor tissue; extensively phenotyped" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/65> a sio:SIO_000616 ;
+	dct:description "Extensively phenotyped" ;
+	dct:title "Polygene" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/66> a sio:SIO_000616 ;
+	dct:description "Including 300 bladder cancer, 500 prostate cancer" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/67> a sio:SIO_000616 ;
+	dct:description "Extensively phenotyped" ;
+	dct:title "Polygene" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/68> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "Polygene" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/69> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "Polygene" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/70> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "Polygene" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/71> a sio:SIO_000616 ;
+	dct:description "Extensive phenotyping; trio setup" ;
+	dct:title "Thyroid cancer" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/73> a sio:SIO_000616 ;
+	dct:description "Patient based" ;
+	dct:title "GENDER" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/74> a sio:SIO_000616 ;
+	dct:description "Patient based" ;
+	dct:title "Regress" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/76> a sio:SIO_000616 ;
+	dct:description "Intervention trial" ;
+	dct:title "Prosper" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/77> a sio:SIO_000616 ;
+	dct:description "LDL receptor defects; Other categories and index patients available" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/78> a sio:SIO_000616 ;
+	dct:description "Clinic based, 1000 independent; 500 familial" ;
+	dct:title "Lipidpoli" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/79> a sio:SIO_000616 ;
+	dct:description "Nutrition prospective cohort study" ;
+	dct:title "Zutphen" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/80> a sio:SIO_000616 ;
+	dct:description "Nutrition prospective cohort study in post MI patients." ;
+	dct:title "Alpha Omega Trial" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/81> a sio:SIO_000616 ;
+	dct:description "210 child-parent trios" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/82> a sio:SIO_000616 ;
+	dct:description "Population based" ;
+	dct:title "Peilstationsproject Hart- en Vaatziekten (PPHVZ)" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/83> a sio:SIO_000616 ;
+	dct:description "Hospital population-based" ;
+	dct:title "SMART" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/84> a sio:SIO_000616 ;
+	dct:description "NT and HT individuals, 24-hour BP, hormonal status, IMT, PWV, etc" ;
+	dct:title "Socrates" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/85> a sio:SIO_000616 ;
+	dct:description "Patient based" ;
+	dct:title "SMILE" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/86> a sio:SIO_000616 ;
+	dct:description "prospective cohort" ;
+	dct:title "HAPPY" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/87> a sio:SIO_000616 ;
+	dct:description "Case control study, Hypercholesterolemic and hypertensive population. Pharmacy data, questionnaire data, physician data" ;
+	dct:title "Utrecht Cardiovascular Pharmacogenetics UCP" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/88> a sio:SIO_000616 ;
+	dct:description "see PLoS ONE 3(10): e3583. doi:10.1371/journal.pone.0003583" ;
+	dct:title "PAS" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/89> a sio:SIO_000616 ;
+	dct:description "see PLoS ONE 3(10): e3583. doi:10.1371/journal.pone.0003583" ;
+	dct:title "Agnes" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/90> a sio:SIO_000616 ;
+	dct:description "see PLoS ONE 3(10): e3583. doi:10.1371/journal.pone.0003583" ;
+	dct:title "Genetic risk factors in Familial Hypercholesterolemia" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/92> a sio:SIO_000616 ;
+	dct:description "Population-based, out-of-hospital cardiac arrest" ;
+	dct:title "ARREST" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/93> a sio:SIO_000616 ;
+	dct:description "Family-based, 23 extended families. 5 yrs follow-up data available for n=201 (21 families)" ;
+	dct:title "Familial Combined HyperLipidemia" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/94> a sio:SIO_000616 ;
+	dct:description "Family-based, 5  yrs follow-up data available for n=502 (13 extended families), 10 yrs follow-up data available for n=162 (12 families)" ;
+	dct:title "FCHL-Nijmegen" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/95> a sio:SIO_000616 ;
+	dct:description "Control Aortas >380. Coronaries >80. Aortic Aneurysms >200. Vessel wall (paraffin embedded, classified). Frozen material" ;
+	dct:title "Vascular disease" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/96> a sio:SIO_000616 ;
+	dct:description """AtheroRemo-IVUS is a prospective observational study that has enrolled 600 patients with coronary artery disease. At baseline, angiography and intravascular ultrasound-virtual histology (IVUS-VH) have been performed; history, medication, physical examination and electrocardiograms have been recorded; and blood samples have been drawn. The primary study aim is to correlate coronary artery disease imaging phenotype as determined by IVUS-VH with genetic profile.
+N.B. Co-founder is Prof. Patrick Serruys, who is with the Imperial College, London.""" ;
+	dct:title "AtheroRemo-IVUS" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/97> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/98> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/99> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/100> a sio:SIO_000616 ;
+	dct:description "all extensively phenotyped (1600 more but no DNA); 139 non-diabetic participants with hyperglycemic clamp data." ;
+	dct:title "Hoorn Study" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/102> a sio:SIO_000616 ;
+	dct:description "78 non-diabetic participants with hyperglycemic clamp data." ;
+	dct:title "Utrecht Clamp Cohort" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/103> a sio:SIO_000616 ;
+	dct:description "250 families" ;
+	dct:title "HEFAS" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/104> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/105> a sio:SIO_000616 ;
+	dct:description "700" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/106> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/107> a sio:SIO_000616 ;
+	dct:description "Familybased, 1000 independent cases" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/108> a sio:SIO_000616 ;
+	dct:description "Cohort of treated T2DM patients. Complete pharmacy, hospitalization,questionnaire, GP and laboratory data." ;
+	dct:title "UDES" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/109> a sio:SIO_000616 ;
+	dct:description "7 years follow-up data available for n=489" ;
+	dct:title "Cohort on Diabetes and Atherosclerosis" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/110> a sio:SIO_000616 ;
+	dct:description "Biopsies were taken during elective bariatric surgery.Blood was taken in fasted state on morning before surgery. Specimens for histological assessment are available. Other data available: BMI, age, waist-to-hip ratio, gender, blood measurements" ;
+	dct:title "Severely Obese Individuals Maastricht" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/111> a sio:SIO_000616 ;
+	dct:description "Extensive clinical data" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/112> a sio:SIO_000616 ;
+	dct:description "e.g. IBD, pancreatitis, hepatitis, PCLD" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/113> a sio:SIO_000616 ;
+	dct:description "Familybased, 600 independent cases" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/114> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/116> a sio:SIO_000616 ;
+	dct:description "Familybased, 150 independent cases" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/117> a sio:SIO_000616 ;
+	dct:description "May 2011: 650 patients 50 controls (parents partners) collecting 50 patients each month. All currently available biobanks for inflammatory bowel disease are collected in referral centers and therefore severe disease and mostly Crohn's disease is over represented. In 1991 we started with a population based registration of all (+/- 3000) IBD patients in Zuid Limburg, The Netherlands. The registration contains 95% of the patients due to excellent collaboration of the 3 hospitals in the region. WE obtained METC approval to biobank this cohort + controls (partners and parents) in march 2011." ;
+	dct:title "IBD Zuid Limburg Biobank" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/118> a sio:SIO_000616 ;
+	dct:description "n=734 HIV+, incl. 335 with accurately imputed seroconversion date, AIDS event n= 180. Cells and plasma of all (>55.000 vaible frozen PBMC samples, longitudinally collected with 2-20 years of follow-up, 3-4 blood donations/yr. DNA ready from converters" ;
+	dct:title "Amsterdam cohort study" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/119> a sio:SIO_000616 ;
+	dct:description "n=414 HIV+, incl. 120 seroconverters, AIDS n= 132. Cells and plasma of all, (>23.000 viable frozen PBMC samples, longitudinally collected with 2-20 years of follow-up, 2-3 blood donations/yr. DNA ready from converters" ;
+	dct:title "Amsterdam cohort study2" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/120> a sio:SIO_000616 ;
+	dct:description "n=600 HIV+ with known date of infection and clinical follow-up data. Stored plasma of all, DNA ready from 280" ;
+	dct:title "HIV Host genetics cohort" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/121> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "Amsterdam" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/122> a sio:SIO_000616 ;
+	dct:description "Patient based" ;
+	dct:title "TB Indonesia" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/123> a sio:SIO_000616 ;
+	dct:description "Ongoing nationwide prospective cohort study in 90 hospitals since March 2006; coverage of 95% of all Dutch adults with community-acquired bacterial meningitis. Extensive clinical database, DNA, CSF, and causative bacteria; including controls matched for age, ethnicity, socio-economic status, and bacterial exposure." ;
+	dct:title "MeninGene" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/124> a sio:SIO_000616 ;
+	dct:description "Patient based, with a focus on CMV-immunity and allo-immunity" ;
+	dct:title "AMC Renal Transplant Biobank" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/125> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "VUMC-BM cohort" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/126> a sio:SIO_000616 ;
+	dct:description "Affected sib-pairs" ;
+	dct:title "GIFT" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/127> a sio:SIO_000616 ;
+	dct:description "Familybased, 700 independent cases" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/128> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "CuraSAB" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/129> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/130> a sio:SIO_000616 ;
+	dct:description "Trial: genotyping before start coumarin therapy. To be included in 2010-2011: 1200 NL, total in Europe 3000" ;
+	dct:title "EU-PACT" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/131> a sio:SIO_000616 ;
+	dct:description "very rich phenotyping available" ;
+	dct:title "NUBIN AD" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/132> a sio:SIO_000616 ;
+	dct:description "Clinic based" ;
+	dct:title "Cluster" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/133> a sio:SIO_000616 ;
+	dct:description "Prospective cohort of FTD patients for genetic and biomarker research. Also information on MRI/CT scans, demographics, NPA, family history, genotypes, pathology available." ;
+	dct:title "Frontotemporal Dementia ErasmusMC" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/134> a sio:SIO_000616 ;
+	dct:description "Population based; MRI data on 450" ;
+	dct:title "GEM" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/135> a sio:SIO_000616 ;
+	dct:description "Trio's" ;
+	dct:title "Costa Rica" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/136> a sio:SIO_000616 ;
+	dct:description "Clinic based" ;
+	dct:title "LUMINA" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/137> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "NUBIN MS" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/139> a sio:SIO_000616 ;
+	dct:description "autopsy cohort and 2250 registered brain donors" ;
+	dct:title "NBB" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/140> a sio:SIO_000616 ;
+	dct:description "Population based" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/141> a sio:SIO_000616 ;
+	dct:description "Affected sib-pairs" ;
+	dct:title "GARP" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/142> a sio:SIO_000616 ;
+	dct:description "Patient based" ;
+	dct:title "Early Arthritis Clinic Cohort (EAC), BEST" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/143> a sio:SIO_000616 ;
+	dct:description "450 long follow-up. For part of the patients we have RNA and serum/plasma available." ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/144> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "UMCG" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/145> a sio:SIO_000616 ;
+	dct:description "500 families" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/146> a sio:SIO_000616 ;
+	dct:description "adult patients" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/148> a sio:SIO_000616 ;
+	dct:description "Familybased, 300 independent cases" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/149> a sio:SIO_000616 ;
+	dct:description "150 families" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/150> a sio:SIO_000616 ;
+	dct:description "2981 respondents, mainly depression/anxiety cases but also >500 healthy controls. NB Also info on metabolic syndrome, migraine, and other phenotyes." ;
+	dct:title "NESDA" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/152> a sio:SIO_000616 ;
+	dct:description "150 early dyslexia precursor research trios" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/153> a sio:SIO_000616 ;
+	dct:description "120 sib pair families" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/154> a sio:SIO_000616 ;
+	dct:description "Familybased, 500 independent cases" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/155> a sio:SIO_000616 ;
+	dct:description "Familybased, 600 independent cases" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/157> a sio:SIO_000616 ;
+	dct:description "Anonymized, for SNP/risk factor allele frequency analysis" ;
+	dct:title "NL Perinatal screening" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/158> a sio:SIO_000616 ;
+	dct:description "Prospective population-based cohort (n=120000), men and women, baseline in 1986; 20 years follow-up of cancer incidence and mortality." ;
+	dct:title "Netherlands Cohort Study on Diet and Cancer" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/159> a sio:SIO_000616 ;
+	dct:description """Prospective cohort focused on IVF-treatment
+Contact: Floor van Leeuwen""" ;
+	dct:title "OMEGA" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/160> a sio:SIO_000616 ;
+	dct:description "Nationally coordinated assessment of international randomized clinical trials" ;
+	dct:title "TEAM" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/161> a sio:SIO_000616 ;
+	dct:description "Nationally coordinated assessment of international randomized clinical trials" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/162> a sio:SIO_000616 ;
+	dct:description "prospective cohort" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/163> a sio:SIO_000616 ;
+	dct:description "50-100 vials per individual; well characterized individuals" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/165> a sio:SIO_000616 ;
+	dct:description "independent isolates" ;
+	dct:title "SERIN" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/166> a sio:SIO_000616 ;
+	dct:description "Patient based" ;
+	dct:title "N/A" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/167> a sio:SIO_000616 ;
+	dct:description "80,000 frozen tissue, 3,000,000 FFPE tissue blocks. Vele verschillende soorten studies worden op de weefsels gedaan door wetenschappers die de samples nodig hebben voor hun onderzoek. De samples worden benaderd met een grote verscheidenheid aan technieken. Veel kanker onderzoek naar Â biomarkers en targets, maar ook voor het testen, valideren en proberen van verschillende technieken" ;
+	dct:title "Erasmus MC Tissue Bank" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/168> a sio:SIO_000616 ;
+	dct:description "Helius is started per december 2010 and will enroll 60.000 inhabitants of Amsterdam from six ethnic groups: hindu-Surinamese, Creole-Surinamese, Turkish, Moroccan, Ghanese and autochtonous Dutch. Parallel studies will be set up in countries of origin and the first is already started in Paramaribo. A small health investigation and an extensive questionnaire are focussed on cardiovascular and mental health and infectious diseases (www.heliusstudy.nl)" ;
+	dct:title "HEalthy LIfe in an Urban Setting" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/169> a sio:SIO_000616 ;
+	dct:description """Clinical sample of children who were referred to child psychiatric services before age 11. Complementary to the TRAILS population cohort to oversample \"vulnerableâ participants.
+See website www.trails.nl for more info and publications""" ;
+	dct:title "TRAILS2" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/171> a sio:SIO_000616 ;
+	dct:description "Sample sizes of various biomaterial may vary due to unavailability (empty vials)." ;
+	dct:title "Athero-Express Biobank Study" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/172> a sio:SIO_000616 ;
+	dct:description "The majority of this biobank contains AAA-material, but also includes aneurysms from other vessels. Sample sizes of various biomaterial may vary due to unavailability (empty vials)." ;
+	dct:title "AAA-Express Biobank Study" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/173> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "GARP + RAAK study" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/174> a sio:SIO_000616 ;
+	dct:description "The samples are stored in the 54 pathology laboratories in the Netherlands; PALGA plays an intermediate role between researches and pathology laboratories." ;
+	dct:title "PALGA" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/187> a sio:SIO_000616 ;
+	dct:description "The GEOLynch cohort is an ongoing prospective cohort study designed to investigate the relationship between nutrition, lifestyle, genetic susceptibility and the occurrence of colorectal tumors among persons with an inherited mutation in a mismatch repair gene (Lynch Syndrome)." ;
+	dct:title "GEOLynch" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/188> a sio:SIO_000616 ;
+	dct:description """Occupational exposures and chronic diseases; focus on shift work and breast cancer.
+
+62.000 participants with questionnaire data; 80% also donated toenails""" ;
+	dct:title "The Nightingale Study" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/195> a sio:SIO_000616 ;
+	dct:description "Population based cohort study; all extensively phenotyped" ;
+	dct:title "New Hoorn Study" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/196> a sio:SIO_000616 ;
+	dct:description "Longitudinal cohort of diabetes patients with yearly follow-up data" ;
+	dct:title "Diabetes Care System West-Friesland" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/197> a sio:SIO_000616 ;
+	dct:description "Population based cohort study. Final target n = 10,000 (2,000 per year): 5,000 type 2 diabetes and 5,000 general population. Extensively phenotyped in four different visits: anthropometrics, lung function, vascular function, exercise, MRI, CT. Start of study January 2011." ;
+	dct:title "De Maastricht Studie" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/198> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "Dutch Hodgkin's Lymphoma Cohort" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/200> a sio:SIO_000616 ;
+	dct:description "DSM diagnosis available + CBCL data + additional data on questionnaires" ;
+	dct:title "BinnensteBuiten" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/201> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "CORRBI" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/202> a sio:SIO_000616 ;
+	dct:description "600 myopia, 600 controls" ;
+	dct:title "MYST" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/203> a sio:SIO_000616 ;
+	dct:description "Cortical tissue and cortical fluid will be collected in subset of patients during Deep Brain Stimulation surgery" ;
+	dct:title "AMC psychiatry" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/206> a sio:SIO_000616 ;
+	dct:description "Collection of clinical data and body specimen of patients with interstitial lung diseases, mainly sarcoidosis and lung fibrosis, but also ultra rare diseases like lymphangioleiomyomatosis and pulmonary alveolar proteinosis . Patients have signed informed consent." ;
+	dct:title "dataILD" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/207> a sio:SIO_000616 ;
+	dct:description "population based cohorts, with multiple phenotypes, including MRI measures, cognition, and questionnaire data" ;
+	dct:title "ID1000" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/208> a sio:SIO_000616 ;
+	dct:description "All patient data in PALGA, no cohort studies." ;
+	dct:title "Biobank UMCG" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/211> a sio:SIO_000616 ;
+	dct:description """ARGOS: The âAssociation study of coronary heart disease (CHD) Risk factors in the Genome using an Old-versus-young Settingâ (ARGOS-NL) population consisted of 500 patients, who were selected from 17000 FH patients with an identified causal mutation in the LDLR gene (segregating in the families and not present in controls) from the nationwide molecular screening program for FH. They were recruited from 38 lipid and cardiology clinics in the Netherlands in the nationwide molecular screening program of the âStichting Opsporing Erfelijke Familiare Hypercholesterolemie (StOEH)â.9 Phenotypic data (including CHD events) were acquired from general practitioners and by reviewing medical records at the lipid and cardiologic clinics.
+Hartstichting number NHS-2006B190""" ;
+	dct:title "Association study of coronary heart disease (CHD) Risk factors in the Genome using an Old-versus-young Setting" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/212> a sio:SIO_000616 ;
+	dct:description "largely twin-pairs, including concordant and discordant for disease and healthy. MRI-scans performed" ;
+	dct:title "U-TWIN" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/213> a sio:SIO_000616 ;
+	dct:description """Prenatal nutrition long term effects, fetal origins
+In collaboration with Columbia University NY""" ;
+	dct:title "Hongerwinter Families (HoF) studie" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/214> a sio:SIO_000616 ;
+	dct:description """Metabolomics, Fasting and posprandial (Total volume ~ 200ml)
+http://www.ncbi.nlm.nih.gov/pubmed/23576214""" ;
+	dct:title "NEO-Study" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/215> a sio:SIO_000616 ;
+	dct:description "Includes MZ twins. Target= >10,000. Source for several studies (f.i. NETSAD, NETAMB, NETSMOK, Covamaer)" ;
+	dct:title "Netherlands Twin Register" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/184> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "Parel Ischemische hartziekten" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/217> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "Parel Oesofagus Maag tumoren" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/181> a sio:SIO_000616 ;
+	dct:description "Objective is to better understand early forms of renal failure, affecting some 1650 patients each year, so as to improve prevention of its end stage and of the associated cardiovascular conditions." ;
+	dct:title "Parel Nierfalen" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/183> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "Parel Multipele Endocriene Neoplasie" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/175> a sio:SIO_000616 ;
+	dct:description "Objective is to improve treatment possibilities and to prevent new infarctions and haemorrhages for 120,000 patients living with the consequences of a stroke." ;
+	dct:title "Parel Cerebro vasculair accident" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/179> a sio:SIO_000616 ;
+	dct:description "Objective is to facilitate the rapid introduction of new diagnostics, treatments and therapies tailored to the needs of the individual patient, according to the genetic characteristics of their particular tumour. In the Netherlands, about 1500 people a year are diagnosed with leukaemia and more than 1100 die of the condition." ;
+	dct:title "Parel Leukemie, Myeloom, Lymfeklierkanker" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/115> a sio:SIO_000616 ;
+	dct:description "Objective is to better understand the causes of this group of conditions and the effectiveness of medicines and treatment for 60,000 patients with a chronic inflammation of the digestive tract." ;
+	dct:title "Parel Inflammatoire darmziekten" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/182> a sio:SIO_000616 ;
+	dct:description "Objective is to prevent long-term invalidity for the 210,000 patients with rheumatoid arthritis and arthrosis." ;
+	dct:title "Parel Reuma" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/216> a sio:SIO_000616 ;
+	dct:description "" ;
+	dct:title "Parel Parkinson" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/177> a sio:SIO_000616 ;
+	dct:description "Objective is to improve front-line care in anticipation of a sharp rise in the number of diabetes patients from the current figure of about 600,000." ;
+	dct:title "Parel Diabetes" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/180> a sio:SIO_000616 ;
+	dct:description "Klinische data, inclusief beelden" ;
+	dct:title "Parel Neurodegeneratieve hersenziekten" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/186> a sio:SIO_000616 ;
+	dct:description "Het doel van de PancreasParel is het verzamelen van pancreasweefsel en bloed bij elke electieve pancreasoperatie (ongeacht de indicatie) ten behoeve van wetenschappelijk onderzoek naar pancreas- en peri-ampullaire tumoren en chronische pancreatitis." ;
+	dct:title "Parel Pancreas" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/178> a sio:SIO_000616 ;
+	dct:description "To improve prevention, treatment and the quality of care for patients with some form of hereditary colorectal cancer, who currently number approximately 4000." ;
+	dct:title "Parel Erfelijke darmkanker" .
+
+<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/176> a sio:SIO_000616 ;
+	dct:description """Objective is to better understand the long-term complications and genetic causes associated with congenital heart defects. An estimated 50,000 people in the Netherlands are living with such a condition, half of them aged over 18.
+ doel: oorzaken en late uitkomsten van aangeboren hartafwijkingen. Van 15.000 patienten klinische gegevens en toestemming voor DNA bepaling.""" ;
+	dct:title "Parel CONCOR" .
+

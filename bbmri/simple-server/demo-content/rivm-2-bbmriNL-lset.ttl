@@ -1,0 +1,17 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+<https://bronnen.zorggegevens.nl/rdf/8c857c0bb122e27ba03063f1aefc4ba2>	skos:exactMatch	<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/10> .
+
+<https://bronnen.zorggegevens.nl/rdf/a6b736eed219e2ad4de8705c778ad299>	skos:exactMatch	<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/22> .
+
+<https://bronnen.zorggegevens.nl/rdf/b21c01ac8c8ba8d7da6ea81664bc12ef>	skos:exactMatch	<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/13> .	
+
+<https://bronnen.zorggegevens.nl/rdf/a6d9386fa48cef7be17823a7add43b47>	skos:exactMatch	<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/35> .
+
+<https://bronnen.zorggegevens.nl/rdf/40fde2a8faf56fc7a849db98844469c2>	skos:exactMatch	<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/44> .
+
+<https://bronnen.zorggegevens.nl/rdf/95e92c59614497d8e349e8049bbfc8fc>	skos:exactMatch	<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/174> .
+
+<https://bronnen.zorggegevens.nl/rdf/d98bc5876eb7ea535a485d1497bb801f>	skos:exactMatch	<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/82> .
+
+<https://bronnen.zorggegevens.nl/rdf/bfe404d6847b52d42e7218954a5e4b34>	skos:exactMatch	<http://catalogue.bbmri.nl/bbmri_nl_sample_collections/18> .

@@ -1,0 +1,9 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?url ?value { 
+
+    VALUES ?url {<http://semanticscience.org/resource/SIO_000616>}  
+    {
+        ?url rdfs:label ?value.
+    }
+}
