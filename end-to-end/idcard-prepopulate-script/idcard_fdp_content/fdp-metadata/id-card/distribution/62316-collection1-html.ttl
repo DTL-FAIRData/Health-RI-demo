@@ -1,4 +1,4 @@
-62316-collection1-html.ttl@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://purl.org/dc/terms/> .
 @prefix ns2: <http://www.w3.org/ns/dcat#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
 @prefix ns4: <http://rdf.biosemantics.org/ontologies/fdp-o#> .

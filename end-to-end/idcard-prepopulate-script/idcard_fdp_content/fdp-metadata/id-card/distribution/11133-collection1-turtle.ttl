@@ -20,7 +20,7 @@
     ns2:metadataIdentifier <BASE_URI/fdp/distibution/11133-collection1_ttl/metadataID> ;
     ns2:metadataIssued "2017-03-16"^^xsd:date ;
     ns2:metadataModified "2017-03-16"^^xsd:date ;
-    ns3:downloadURL <SIMPLE_SERVER/rdc-demo-datasethd-person.ttl> ;
+    ns3:downloadURL <SIMPLE_SERVER/rdc-demo-dataset/hd-person.ttl> ;
 	ns3:mediaType "text/turtle" .
 
 <BASE_URI/fdp/distibution/11133-collection1_ttl/metadataID> a <http://purl.org/spar/datacite/Identifier> ;

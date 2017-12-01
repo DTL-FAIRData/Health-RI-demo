@@ -1,6 +1,5 @@
 __author__ = 'rajaram'
 
-import json
 import requests
 import os
 import sys
@@ -27,21 +26,30 @@ class IDCard:
         # Remove trailing / from the simple_server_url
         if simple_server_url.endswith("/"):
             simple_server_url = simple_server_url[:-1]
+        dir = "../../fdp-metadata/demo-fdp"
+        if((m_type == "biobank") or (m_type == "registry")):
+            dir = self.DIR_NAME
+
+        fdp_content = str = open(dir + '/fdp_'+m_type+'.ttl', 'r').read()
+
+        print("=========== Store repository metadata=====================")
+        self.patch_metadata(fdp_url, fdp_content)
 
         print("=========== Store catalog metadata=====================")
-        catalog_dir = self.DIR_NAME +"/catalog/" + m_type
+        catalog_dir = dir +"/catalog/" + m_type
         catalog_post_uri= (fdp_url + "/catalog/?id=")
         self.post_metadata_dir(catalog_dir, catalog_post_uri, fdp_url, simple_server_url)
 
         print("=========== Store datatset metadata=====================")
-        dataset_dir = self.DIR_NAME +"/dataset/" + m_type
+        dataset_dir = dir +"/dataset/" + m_type
         dataset_post_uri= (fdp_url + "/dataset/?id=")
         self.post_metadata_dir(dataset_dir, dataset_post_uri, fdp_url, simple_server_url)
 
-        print("=========== Store distribution datatset metadata=====================")
-        distribution_dir = self.DIR_NAME +"/distribution"
-        distribution_post_uri= (fdp_url + "/distribution/?id=")
-        self.post_metadata_dir(distribution_dir, distribution_post_uri, fdp_url, simple_server_url)
+        if(m_type != "demo"):
+            print("=========== Store distribution datatset metadata=====================")
+            distribution_dir = dir +"/distribution"
+            distribution_post_uri= (fdp_url + "/distribution/?id=")
+            self.post_metadata_dir(distribution_dir, distribution_post_uri, fdp_url, simple_server_url)
 
 
     def post_metadata_dir(self, dir, post_uri, fdp_url, simple_server_url):
@@ -60,10 +68,15 @@ class IDCard:
                 self.post_metadata((post_uri  + file_name), file_content)
 
     def post_metadata(self, post_uri, content):
+        headers = {'content-type': 'text/turtle'}
+        #print(content)
+        r = requests.post(post_uri, data=content.encode('utf8') , headers=headers)
+        print(r.headers)
+
+    def patch_metadata(self, patch_uri, content):
         try:
             headers = {'content-type': 'text/turtle'}
-            r = requests.post(post_uri, data=content.encode('utf8') , headers=headers)
-            self.RE_TRY = 0
+            r = requests.patch(patch_uri, data=content.encode('utf8'), headers=headers)
             print(r.headers)
         except:
             print("Error making POST call the script will redo the call after 30sec")
@@ -72,7 +85,8 @@ class IDCard:
             if (self.RE_TRY <= self.MAX_RE_TRY):
                 self.RE_TRY = self.RE_TRY + 1
                 print("Retry number : ", str(self.RE_TRY))
-                self.post_metadata(post_uri, content)
+                self.patch_metadata(patch_uri, content)
+
 
 
 test = IDCard()
@@ -93,6 +107,8 @@ else:
     if(m_type == "biobank"):
         test.store_metadata(m_type, fdp_uri, s_server_uri)
     elif(m_type.lower() == "registry"):
+        test.store_metadata(m_type, fdp_uri, s_server_uri)
+    elif(m_type.lower() == "demo"):
         test.store_metadata(m_type, fdp_uri, s_server_uri)
     else:
         print("Unknown metadata type, provide either biobank (or) registry as a 1st arg")

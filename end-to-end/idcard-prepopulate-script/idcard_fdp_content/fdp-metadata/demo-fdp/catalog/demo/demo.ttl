@@ -1,0 +1,9 @@
+@prefix ns1: <http://purl.org/dc/terms/> .
+@prefix ns2: <http://www.w3.org/ns/dcat#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<> rdfs:label "Demo catalog"@en ;
+    ns1:hasVersion "1.0" ;
+    ns2:themeTaxonomy <http://dbpedia.org/resource/Biobank>,
+        <http://edamontology.org/topic_3337> .
+
