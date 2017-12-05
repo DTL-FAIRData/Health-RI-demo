@@ -31,6 +31,19 @@ services:
     ports:
       - "8505:80"
 
+  # search
+  fdp-search:
+    image: dtlfair/search:latest
+    environment:
+   #   - LOAD_EXAMPLE_DATA=true
+      - ES_URL=http://localhost:8080/fse/rs/
+    #ports:
+    #  - "8507:80"
+    #  - "8506:8080"
+    #extra_hosts:
+    #  - "localhost:127.0.0.1"
+    network_mode: host    
+
   # Script for pre populatingfdp with rivm metadata
   rivm-prepopu-script:
     build : ./rivm-prepopulate-script

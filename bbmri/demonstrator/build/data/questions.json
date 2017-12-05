@@ -15,7 +15,7 @@
       "queryFileName": "template12.sparql"
     },
     {
-      "text": "GET number of overlapping collections between data provider",
+      "text": "GET overlapping collections BY label",
       "variables": [
         "collection"
       ],

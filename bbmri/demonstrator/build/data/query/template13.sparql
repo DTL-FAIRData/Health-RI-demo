@@ -6,32 +6,17 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-SELECT DISTINCT ?collection ?collectionURI  ?datasetURI ?dataset ?fdpURI ?fdp {   
+SELECT DISTINCT ?collection1URI ?collection1 ?collection2URI ?collection2 {   
   VALUES(?type) {(<#collection#>)} 
   VALUES ?fdpURI {#fdp#} 
   
-  {
-    ?collectionURI skos:exactMatch ?uri1.
-  }
-  UNION
-  {
-    ?uri2 skos:exactMatch ?collectionURI.
-  }
+   ?collection1URI skos:exactMatch ?collection2URI.
   
+     ?collection1URI a ?type;
+                      dct:title ?collection1. 
   
+  ?collection2URI a ?type;
+                      dct:title ?collection2. 
     
-      
-    GRAPH ?distributionURI{
-     ?collectionURI a ?type;
-                      dct:title ?collection.
-                      
-     }
-     
-    GRAPH ?fdpURI {
-      ?datasetURI dct:title ?dataset;
-                      dcat:distribution ?distributionURI.   
-    }
-          
-    ?fdpURI dct:title ?fdp.  
   
-} GROUP BY ?collection ?collectionURI  ?datasetURI ?dataset ?fdpURI ?fdp
+} 
