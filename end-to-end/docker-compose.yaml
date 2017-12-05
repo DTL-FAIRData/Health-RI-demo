@@ -45,7 +45,7 @@ services:
       - "localhost:127.0.0.1"
 
   # search
-  fdp-search:
+  search:
     image: dtlfair/search:latest
     environment:
    #   - LOAD_EXAMPLE_DATA=true
@@ -72,7 +72,7 @@ services:
 
   #virtuoso
   virtuoso:
-     image: tenforce/virtuoso:latest
+     image: shamanou1390/virtuoso:latest
      ports:
        - "8508:8890"
      environment:
