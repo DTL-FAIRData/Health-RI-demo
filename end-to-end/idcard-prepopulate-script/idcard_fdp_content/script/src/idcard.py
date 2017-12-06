@@ -47,7 +47,7 @@ class IDCard:
 
         #if(m_type != "demo"):
         print("=========== Store distribution datatset metadata=====================")
-        distribution_dir = dir +"/distribution"
+        distribution_dir = dir +"/distribution" 
         distribution_post_uri= (fdp_url + "/distribution/?id=")
         self.post_metadata_dir(distribution_dir, distribution_post_uri, fdp_url, simple_server_url)
 
