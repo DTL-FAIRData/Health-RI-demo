@@ -45,11 +45,11 @@ class IDCard:
         dataset_post_uri= (fdp_url + "/dataset/?id=")
         self.post_metadata_dir(dataset_dir, dataset_post_uri, fdp_url, simple_server_url)
 
-        if(m_type != "demo"):
-            print("=========== Store distribution datatset metadata=====================")
-            distribution_dir = dir +"/distribution"
-            distribution_post_uri= (fdp_url + "/distribution/?id=")
-            self.post_metadata_dir(distribution_dir, distribution_post_uri, fdp_url, simple_server_url)
+        #if(m_type != "demo"):
+        print("=========== Store distribution datatset metadata=====================")
+        distribution_dir = dir +"/distribution"
+        distribution_post_uri= (fdp_url + "/distribution/?id=")
+        self.post_metadata_dir(distribution_dir, distribution_post_uri, fdp_url, simple_server_url)
 
 
     def post_metadata_dir(self, dir, post_uri, fdp_url, simple_server_url):
