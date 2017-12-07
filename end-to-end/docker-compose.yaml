@@ -75,8 +75,6 @@ services:
      image: shamanou1390/virtuoso:latest
      ports:
        - "8508:8890"
-     environment:
-       - DBA_PASSWORD=dba
 
   # Script for pre populatingfdp with idcards metadata
   idcard-prepopu-script:
