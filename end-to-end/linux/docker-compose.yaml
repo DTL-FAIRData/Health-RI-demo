@@ -1,0 +1,78 @@
+version: "3.4"
+services:
+  # FDP for patient registry
+  fdp-reg:
+    image: dtlfair/fdp:latest
+    ports:
+      - "8500:8080"
+
+  # FDP for biobank 
+  fdp-biobank:
+    image: dtlfair/fdp:latest
+    ports:
+      - "8501:8080"
+
+  # FDP for the fairfier 
+  fdp-fairfier:
+    image: dtlfair/fdp:healthRiAgraph
+    ports:
+      - "8502:8502"
+    depends_on:
+      - agraph
+    network_mode: host  
+
+  # Create simple server to host rdf files required by demonstrator
+  simple-server:
+    build: ../simple-server
+    ports:
+      - "8503:8080"
+
+  # Blazegraph for the demonstrator
+  blazegraph:
+    image: rajireturn/blazegraph
+    ports:
+      - "8504:8504"
+    network_mode: host  
+
+  # demonstrator 
+  demo-app:
+    image: dtlfair/fair-data-demo:healthRI2017
+    ports:
+      - "8505:80"
+
+  # search
+  search:
+    image: dtlfair/search:develop
+    environment:
+   #   - LOAD_EXAMPLE_DATA=true
+      - ES_URL=http://localhost:8080/fse/rs/
+    network_mode: host
+
+  # agraph 
+  agraph:
+    image: franzinc/agraph:v6.1.1
+    ports:
+     - "10035:10035"
+
+  #fairfier
+  fairifier:
+    image: dtlfair/fairifier:demo
+    ports: 
+      - "8510:3333"
+    network_mode: host
+
+  #virtuoso
+  virtuoso:
+     image: tenforce/virtuoso:latest
+     ports:
+       - "8508:8890"
+     environment:
+       - DBA_PASSWORD=dba
+
+  # Script for pre populatingfdp with idcards metadata
+  idcard-prepopu-script:
+    build : ../idcard-prepopulate-script
+    depends_on:
+      - "fdp-reg"
+      - "fdp-biobank"
+    network_mode: host
